@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+
+  "display": "Node related config files for IDE type checking and linting.  See packages/*/tsconfig.json for code.",
+
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "allowJs": true
+  },
+  "include": [
+    ".eslintrc.js",
+    "vite.config.ts",
+    // "vitest.config.ts"
+    "./packages/tsup.*.ts"
+    // "./packages/*/tsup.config.ts",
+    // ".storybook/*.ts*",
+    // ".storybook/preview.tsx"
+  ]
+}

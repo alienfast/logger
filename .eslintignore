@@ -1,0 +1,16 @@
+node_modules
+packages/*/node_modules
+
+packages/*/dist
+packages/ci/cra
+packages/ci/test
+
+typings-local
+typings
+
+.eslintrc.js
+.pnp*
+.yarn
+
+# remove later
+packages/config/jest.config.base.js

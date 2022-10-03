@@ -1,0 +1,11 @@
+# this is copied down to each package
+
+.DS_Store
+apollo.config.js
+jest.config.js
+schema.json
+tsconfig.json
+tslint.json
+tsconfig.tsbuildinfo
+.yarn
+tsconfig.tsbuildinfo

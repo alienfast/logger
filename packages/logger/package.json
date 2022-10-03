@@ -1,0 +1,36 @@
+{
+  "name": "@alienfast/logger",
+  "version": "9.0.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": true,
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/alienfast/tools.git"
+  },
+  "scripts": {
+    "test": "echo 'no tests'"
+  },
+  "dependencies": {
+    "@alienfast/common": "^8.0.27",
+    "@types/node": "^18.8.0"
+  },
+  "devDependencies": {
+    "tsup": "^6.2.3",
+    "vite": "^3.1.4",
+    "vitest": "^0.23.4"
+  }
+}

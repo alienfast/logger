@@ -1,0 +1,11 @@
+{
+  "extends": "@alienfast/config/tsconfig.react-lib.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@alienfast/logger": ["./logger/src"],
+      "@alienfast/logger-browser": ["./logger-browser/src"],
+      "@alienfast/logger-node": ["./logger-node/src"],
+    }
+  }
+}
