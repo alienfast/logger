@@ -13,13 +13,13 @@
   },
   "scripts": {
     "build": "lerna exec --stream --parallel -- yarn tsup --config ../tsup.common.ts",
-    "clean:build": "rimraf ./packages/*/dist || true && rimraf .eslintcache",
-    "clean:logs": "rimraf ./packages/*/*.log *.log",
-    "clean:test": "rimraf test-results test-report.xml ./packages/*/test-report.xml",
+    "prebuild": "run-s clean lint",
+    "clean": "rimraf ./packages/*/dist || true && rimraf .eslintcache",
     "clean:yarn": "rimraf yarn.lock node_modules .yarn/install-state.gz && yarn cache clean",
     "lint": "eslint . --cache --ext .js,.ts,.tsx",
     "lint:fix": "eslint . --cache --ext .js,.ts,.tsx --fix",
-    "test": "lerna exec --stream --parallel -- yarn test"
+    "test": "lerna exec --stream --parallel -- yarn test",
+    "release": "yarn build && yarn auto shipit"
   },
   "husky": {
     "hooks": {
@@ -45,6 +45,7 @@
     "@types/babel__core": "^7",
     "@types/node": "^18.8.0",
     "@types/rimraf": "^3",
+    "auto": "^10.37.6",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.1",
@@ -74,5 +75,12 @@
     "@alienfast/logger-node": "workspace:*",
     "chalk": "^4.1.2",
     "del": "^6.1.1"
+  },
+  "repository": "@alienfast/logger",
+  "author": "Kevin Ross <kevin.ross@alienfast.com>",
+  "auto": {
+    "plugins": [
+      "npm"
+    ]
   }
 }
