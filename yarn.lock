@@ -1173,6 +1173,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lerna-lite/list@npm:^1.11.3":
+  version: 1.11.3
+  resolution: "@lerna-lite/list@npm:1.11.3"
+  dependencies:
+    "@lerna-lite/core": 1.11.3
+    "@lerna-lite/listable": 1.11.3
+    "@lerna-lite/optional-cmd-common": 1.11.3
+  checksum: f9d0b0fba6f244b5cb328dafe816d512398048f87f555e37df24f60d5ff50055791e249ef47e0a10a0708be79cfbd662ae6c0c3c955062c6f9db584357e5fdcf
+  languageName: node
+  linkType: hard
+
 "@lerna-lite/listable@npm:1.11.3":
   version: 1.11.3
   resolution: "@lerna-lite/listable@npm:1.11.3"
@@ -8710,6 +8721,7 @@ __metadata:
     "@alienfast/eslint-config": ^4.0.2
     "@lerna-lite/cli": ^1.11.3
     "@lerna-lite/exec": ^1.11.3
+    "@lerna-lite/list": ^1.11.3
     "@rushstack/eslint-patch": ^1.2.0
     "@types/babel__core": ^7
     "@types/node": ^18.8.0

@@ -41,6 +41,7 @@
     "@alienfast/eslint-config": "^4.0.2",
     "@lerna-lite/cli": "^1.11.3",
     "@lerna-lite/exec": "^1.11.3",
+    "@lerna-lite/list": "^1.11.3",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/babel__core": "^7",
     "@types/node": "^18.8.0",
