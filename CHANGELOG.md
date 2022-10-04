@@ -1,3 +1,15 @@
+# v9.0.3 (Tue Oct 04 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Move tsup.config.ts to top level, make it easier to lint, more obvious for the build process. ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v9.0.2 (Tue Oct 04 2022)
 
 #### 🐛 Bug Fix
