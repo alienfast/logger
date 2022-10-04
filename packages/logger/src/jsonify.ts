@@ -2,7 +2,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { objectName } from '@alienfast/common'
+
+import { objectName } from './objects'
 
 function jsonSimplify(v: any, except: string[] = []) {
   const result: any = {}

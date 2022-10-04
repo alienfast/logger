@@ -2,8 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable no-console */
-import { browser, isNode } from '@alienfast/common'
-import { jsonify, Level, LogWriter } from '@alienfast/logger'
+import { browser, isNode, jsonify, Level, LogWriter } from '@alienfast/logger'
 
 const DEBUG = false
 const OBJECT = 'font-size: 9px; background: grey; color: #fff; padding: 0 3px;'
