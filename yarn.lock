@@ -57,7 +57,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-browser@workspace:packages/logger-browser"
   dependencies:
-    "@alienfast/logger": ^9.0.1
+    "@alienfast/logger": ^9.0.2
     time-stamp: ^2.2.0
     tsup: ^6.2.3
   languageName: unknown
@@ -67,7 +67,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-node@workspace:packages/logger-node"
   dependencies:
-    "@alienfast/logger": ^9.0.1
+    "@alienfast/logger": ^9.0.2
     chalk: ^4.1.2
     time-stamp: ^2.2.0
     tsup: ^6.2.3
@@ -8700,6 +8700,7 @@ __metadata:
     prettier: ^2.7.1
     rimraf: ^3.0.2
     ts-node: ^10.9.1
+    tsup: ^6.2.3
     typescript: ^4.8.4
     vite: ^3.1.4
     vite-tsconfig-paths: ^3.5.1

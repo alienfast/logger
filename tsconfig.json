@@ -15,8 +15,8 @@
     ".eslintrc.js",
     "vite.config.ts",
     "vitest.config.ts",
-    "./packages/tsup.*.ts"
-    // "./packages/*/tsup.config.ts",
+    "./packages/tsup.*.ts",
+    "tsup.config.ts" // "./packages/*/tsup.config.ts",
     // ".storybook/*.ts*",
     // ".storybook/preview.tsx"
   ]
