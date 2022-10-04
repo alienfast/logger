@@ -14,7 +14,7 @@
   "include": [
     ".eslintrc.js",
     "vite.config.ts",
-    // "vitest.config.ts"
+    "vitest.config.ts",
     "./packages/tsup.*.ts"
     // "./packages/*/tsup.config.ts",
     // ".storybook/*.ts*",

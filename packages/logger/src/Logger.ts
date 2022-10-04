@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
-import { objectName } from '@alienfast/common'
 
 import { Level } from './Level'
 import { Log } from './Log'
 import { LogWriter } from './LogWriter'
+import { objectName } from './objects'
 import { LevelOrBoolean, toLevel } from './toLevel'
 
 export class Logger {
