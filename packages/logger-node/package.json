@@ -1,6 +1,6 @@
 {
   "name": "@alienfast/logger-node",
-  "version": "9.0.1",
+  "version": "9.0.2",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -25,7 +25,7 @@
     "test": "echo 'no tests'"
   },
   "dependencies": {
-    "@alienfast/logger": "^9.0.1",
+    "@alienfast/logger": "^9.0.2",
     "chalk": "^4.1.2",
     "time-stamp": "^2.2.0"
   },
