@@ -1,3 +1,18 @@
+# v9.0.4 (Thu Oct 06 2022)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger`
+  - update dependencies and lock file ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - delegate build to individual packages, use tsup-node for logger-node ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v9.0.3 (Tue Oct 04 2022)
 
 #### ⚠️ Pushed to `main`
