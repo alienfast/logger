@@ -20,7 +20,7 @@
     "clean:yarn": "rimraf yarn.lock node_modules .yarn/install-state.gz && yarn cache clean",
     "lint": "eslint . --cache --ext .js,.ts,.tsx",
     "lint:fix": "eslint . --cache --ext .js,.ts,.tsx --fix",
-    "test": "lerna exec --stream --parallel -- yarn test",
+    "test": "lerna exec --stream --parallel -- CI=true yarn test",
     "release": "yarn build && yarn auto shipit"
   },
   "husky": {
@@ -46,7 +46,7 @@
     "@lerna-lite/list": "^1.11.3",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/babel__core": "^7",
-    "@types/node": "^18.8.2",
+    "@types/node": "^18.8.3",
     "@types/rimraf": "^3",
     "auto": "^10.37.6",
     "eslint": "^8.24.0",
