@@ -22,7 +22,8 @@
     "url": "ssh://git@github.com/alienfast/tools.git"
   },
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsup --config ../../tsup.config.ts"
   },
   "dependencies": {
     "@types/node": "^18.8.0"

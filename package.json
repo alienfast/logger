@@ -12,7 +12,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "lerna exec --stream --parallel -- yarn tsup --config ../../tsup.config.ts",
+    "build": "yarn clean && lerna exec --stream --parallel -- yarn build",
     "prebuild": "run-s clean lint",
     "clean": "rimraf ./packages/*/dist || true && rimraf .eslintcache",
     "clean:yarn": "rimraf yarn.lock node_modules .yarn/install-state.gz && yarn cache clean",

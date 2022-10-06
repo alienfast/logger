@@ -22,7 +22,8 @@
     "url": "ssh://git@github.com/alienfast/tools.git"
   },
   "scripts": {
-    "test": "echo 'no tests'"
+    "test": "echo 'no tests'",
+    "build": "tsup --config ../../tsup.config.ts"
   },
   "dependencies": {
     "@alienfast/logger": "^9.0.3",
