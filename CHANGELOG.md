@@ -1,3 +1,21 @@
+# v10.0.0 (Thu Oct 06 2022)
+
+#### 💥 Breaking Change
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - Change distribution to ESM only bundles [#3](https://github.com/alienfast/logger/pull/3) ([@rosskevin](https://github.com/rosskevin))
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - bring over build:ide and related scripts ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v9.0.4 (Thu Oct 06 2022)
 
 #### ⚠️ Pushed to `main`
