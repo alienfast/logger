@@ -1,3 +1,5 @@
+/* eslint-disable unicorn/prefer-module */
+/* eslint-disable import/no-commonjs */
 require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {

@@ -1,4 +1,3 @@
-
 import { iterator } from './iterators'
 import { Level } from './Level'
 import { Logger } from './Logger'

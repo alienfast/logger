@@ -8,7 +8,6 @@ packages/ci/test
 typings-local
 typings
 
-.eslintrc.js
 .pnp*
 .yarn
 
