@@ -57,7 +57,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-browser@workspace:packages/logger-browser"
   dependencies:
-    "@alienfast/logger": ^9.0.3
+    "@alienfast/logger": ^9.0.4
     time-stamp: ^2.2.0
     tsup: ^6.2.3
   languageName: unknown
@@ -67,8 +67,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-node@workspace:packages/logger-node"
   dependencies:
-    "@alienfast/logger": ^9.0.3
-    chalk: ^4.1.2
+    "@alienfast/logger": ^9.0.4
+    chalk: ^5.1.0
     time-stamp: ^2.2.0
     tsup: ^6.2.3
   languageName: unknown
@@ -78,7 +78,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger@workspace:packages/logger"
   dependencies:
-    "@types/node": ^18.8.2
+    "@types/node": ^18.8.3
     tsup: ^6.2.3
     vite: ^3.1.6
     vitest: ^0.23.4
@@ -1918,10 +1918,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.8.2":
+"@types/node@npm:*":
   version: 18.8.2
   resolution: "@types/node@npm:18.8.2"
   checksum: b7c74dea0e835fb7faf69b4a2e87d43c1d228d88adacdff464d9e92d18a0b43bec6147b9eb3287650ac75fe5af730c53391869d02175e6b032dcb99ae2f54c92
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.8.3":
+  version: 18.8.3
+  resolution: "@types/node@npm:18.8.3"
+  checksum: 9201adc6dc389644c9f478f950ef8926a93e5827865dcd80d7d12fefacab665c96879c87cd6ec74d5eccdd998c4603d02e1e07a35d71a63fe4c20670a381f6ef
   languageName: node
   linkType: hard
 
@@ -8702,7 +8709,7 @@ __metadata:
     "@lerna-lite/list": ^1.11.3
     "@rushstack/eslint-patch": ^1.2.0
     "@types/babel__core": ^7
-    "@types/node": ^18.8.2
+    "@types/node": ^18.8.3
     "@types/rimraf": ^3
     auto: ^10.37.6
     eslint: ^8.24.0

@@ -2,14 +2,12 @@
   "name": "@alienfast/logger-node",
   "version": "9.0.4",
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main-note": "This is to appease tsc in moduleResolution: node see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build",
+  "main": "src/index.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.js"
     }
   },
   "sideEffects": true,
@@ -27,7 +25,7 @@
   },
   "dependencies": {
     "@alienfast/logger": "^9.0.4",
-    "chalk": "^4.1.2",
+    "chalk": "^5.1.0",
     "time-stamp": "^2.2.0"
   },
   "devDependencies": {

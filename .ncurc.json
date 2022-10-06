@@ -1,13 +1,5 @@
 {
   "packageFile": ["./package.json", "./packages/*/package.json"],
   "packageManager": "yarn",
-  "reject": [
-    "chalk",
-    "del",
-    "strip-json-comments",
-    "react",
-    "react-dom",
-    "@types/react",
-    "@types/react-dom"
-  ]
+  "reject": ["react", "react-dom", "@types/react", "@types/react-dom"]
 }
