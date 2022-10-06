@@ -3,12 +3,8 @@ tmp
 .idea
 .storybook-out
 env-*.txt
-packages/build/cra
-packages/build/test/tmp
 packages/*/dist
 packages/*/.rpt2_cache
-packages/*/LICENSE
-packages/*/.npmignore
 # local runs
 test-report.xml
 # ci runs
