@@ -21,7 +21,7 @@
   },
   "scripts": {
     "test": "echo 'no tests'",
-    "build": "tsup-node --config ../../tsup.config.ts"
+    "build": "tsup --config ../../tsup.config.ts"
   },
   "dependencies": {
     "@alienfast/logger": "^11.0.2",
