@@ -1,3 +1,19 @@
+# v11.0.1 (Tue Oct 25 2022)
+
+#### ⚠️ Pushed to `main`
+
+- require tests to pass for a release!!! ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-node`
+  - fix chalk usage after major update ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - ncu && npm-check ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.0 (Thu Oct 13 2022)
 
 #### 💥 Breaking Change
