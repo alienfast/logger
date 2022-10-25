@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable no-console */
 import { Level, LogWriter } from '@alienfast/logger'
-import chalk, { Chalk } from 'chalk'
+import chalk, { ChalkInstance } from 'chalk'
 import timestamp from 'time-stamp'
 
 // chalk.enabled = true
@@ -32,9 +32,10 @@ export class NodeLogWriter implements LogWriter {
     }
   }
 
-  private toArgs(name: string, levelName: string, levelColor: Chalk, args: any[]): any[] {
+  private toArgs(name: string, levelName: string, levelColor: ChalkInstance, args: any[]): any[] {
     return [
       `${chalk.grey(timestamp('HH:mm:ss'))}`,
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       `${levelColor(levelName)} ${chalk.inverse(levelColor(' ' + name + ' '))}`,
       ...args,
     ]
