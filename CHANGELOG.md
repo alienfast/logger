@@ -1,3 +1,17 @@
+# v11.0.2 (Tue Oct 25 2022)
+
+#### ⚠️ Pushed to `main`
+
+- fresh yarn ([@rosskevin](https://github.com/rosskevin))
+- clean:yarn - get rid of cache for platform specific files ([@rosskevin](https://github.com/rosskevin))
+- stop minimizing build, unnecessary. ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.1 (Tue Oct 25 2022)
 
 #### ⚠️ Pushed to `main`
