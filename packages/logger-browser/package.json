@@ -24,10 +24,9 @@
     "build": "tsup --config ../../tsup.config.ts"
   },
   "dependencies": {
-    "@alienfast/logger": "^11.0.0",
-    "time-stamp": "^2.2.0"
+    "@alienfast/logger": "^11.0.0"
   },
   "devDependencies": {
-    "tsup": "^6.2.3"
+    "tsup": "^6.3.0"
   }
 }
