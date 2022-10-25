@@ -1,3 +1,17 @@
+# v11.0.3 (Tue Oct 25 2022)
+
+#### ⚠️ Pushed to `main`
+
+- yarn set version latest ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-node`
+  - stop using tsup-node - it is bundling dependencies together ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.2 (Tue Oct 25 2022)
 
 #### ⚠️ Pushed to `main`
