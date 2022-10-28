@@ -5,7 +5,7 @@ import { Level } from './Level'
 import { LogConfig } from './LogConfig'
 import { Logger } from './Logger'
 
-const NOLOG = process.env.NOLOG || false
+const NOLOG = typeof process !== 'undefined' && process.env.NOLOG
 
 export class Log {
   public logConfig: LogConfig
