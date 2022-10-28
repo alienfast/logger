@@ -1,3 +1,15 @@
+# v11.0.7 (Fri Oct 28 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Bump to see if packages are properly listed on repo page ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.6 (Fri Oct 28 2022)
 
 #### ⚠️ Pushed to `main`

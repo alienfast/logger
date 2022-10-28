@@ -1,3 +1,17 @@
+# v11.0.7 (Fri Oct 28 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - Bump to see if packages are properly listed on repo page ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.6 (Fri Oct 28 2022)
 
 #### ⚠️ Pushed to `main`
