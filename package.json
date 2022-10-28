@@ -80,7 +80,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "repository": "github:@alienfast/logger",
+  "repository": "https://github.com/alienfast/logger",
   "author": "Kevin Ross <kevin.ross@alienfast.com>",
   "auto": {
     "plugins": [

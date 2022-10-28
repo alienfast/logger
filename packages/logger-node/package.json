@@ -27,5 +27,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "repository": "github:@alienfast/logger"
+  "repository": "https://github.com/alienfast/logger"
 }
