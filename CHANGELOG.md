@@ -1,3 +1,22 @@
+# v11.0.4 (Fri Oct 28 2022)
+
+#### ⚠️ Pushed to `main`
+
+- use yarn immutable and pass env to every command ([@rosskevin](https://github.com/rosskevin))
+- explicitly pass env to each command ([@rosskevin](https://github.com/rosskevin))
+- no more check-in of cache ([@rosskevin](https://github.com/rosskevin))
+- clean:yarn ([@rosskevin](https://github.com/rosskevin))
+- update build config to use actions/setup-node with yarn caching ([@rosskevin](https://github.com/rosskevin))
+- update actions versions ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger`
+  - type safety around process ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.3 (Tue Oct 25 2022)
 
 #### ⚠️ Pushed to `main`
