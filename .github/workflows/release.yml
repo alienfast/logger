@@ -12,18 +12,14 @@ jobs:
       - name: Prepare repository
         run: git fetch --unshallow --tags
 
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
-
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: Create Release
+          node-version: 16
+          cache: 'yarn'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          yarn release
+
+      - run: yarn install
+
+      - run: yarn release
