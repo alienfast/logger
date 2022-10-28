@@ -1,6 +1,6 @@
 {
   "name": "@alienfast/logger-browser",
-  "version": "11.0.4",
+  "version": "11.0.5",
   "type": "module",
   "main-note": "This is to appease tsc in moduleResolution: node see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build",
   "main": "./dist/index.js",
@@ -17,7 +17,7 @@
     "build": "tsup --config ../../tsup.config.ts"
   },
   "dependencies": {
-    "@alienfast/logger": "^11.0.4"
+    "@alienfast/logger": "^11.0.5"
   },
   "devDependencies": {
     "tsup": "^6.3.0"
