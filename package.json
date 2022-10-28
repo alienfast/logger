@@ -18,7 +18,7 @@
     "lint": "eslint . --cache --ext .js,.ts,.tsx",
     "lint:fix": "eslint . --cache --ext .js,.ts,.tsx --fix",
     "test": "lerna exec --stream --parallel -- yarn test",
-    "release": "yarn test && yarn build && yarn auto shipit"
+    "release": "yarn auto shipit"
   },
   "husky": {
     "hooks": {
