@@ -43,7 +43,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-browser@workspace:packages/logger-browser"
   dependencies:
-    "@alienfast/logger": ^11.0.3
+    "@alienfast/logger": ^11.0.4
     tsup: ^6.3.0
   languageName: unknown
   linkType: soft
@@ -52,7 +52,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-node@workspace:packages/logger-node"
   dependencies:
-    "@alienfast/logger": ^11.0.3
+    "@alienfast/logger": ^11.0.4
     chalk: ^5.1.2
     time-stamp: ^2.2.0
     tsup: ^6.3.0
@@ -371,6 +371,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lerna-lite/changed@npm:^1.12.0":
+  version: 1.12.0
+  resolution: "@lerna-lite/changed@npm:1.12.0"
+  dependencies:
+    "@lerna-lite/core": 1.12.0
+    "@lerna-lite/list": 1.12.0
+    "@lerna-lite/listable": 1.12.0
+  checksum: 5ef448b69956a9f03da2444eecc7526dec4884417da0d64bc347095e426c6aa2fddbe4027cc4f7e5a149471d401a0888a8a15f720afbab242768a7518b1f359a
+  languageName: node
+  linkType: hard
+
 "@lerna-lite/cli@npm:^1.12.0":
   version: 1.12.0
   resolution: "@lerna-lite/cli@npm:1.12.0"
@@ -481,7 +492,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lerna-lite/list@npm:^1.12.0":
+"@lerna-lite/list@npm:1.12.0, @lerna-lite/list@npm:^1.12.0":
   version: 1.12.0
   resolution: "@lerna-lite/list@npm:1.12.0"
   dependencies:
@@ -7302,6 +7313,7 @@ __metadata:
   dependencies:
     "@alienfast/config": ^8.1.9
     "@alienfast/eslint-config": ^4.0.3
+    "@lerna-lite/changed": ^1.12.0
     "@lerna-lite/cli": ^1.12.0
     "@lerna-lite/exec": ^1.12.0
     "@lerna-lite/list": ^1.12.0

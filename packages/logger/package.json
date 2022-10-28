@@ -12,13 +12,6 @@
   },
   "sideEffects": true,
   "license": "UNLICENSED",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com/alienfast/tools.git"
-  },
   "scripts": {
     "test": "vitest",
     "build": "tsup --config ../../tsup.config.ts"
@@ -29,5 +22,9 @@
   "devDependencies": {
     "tsup": "^6.3.0",
     "vitest": "^0.24.3"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": "github:@alienfast/logger"
 }

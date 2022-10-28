@@ -2,9 +2,6 @@
   "version": "9.0.0",
   "private": true,
   "packageManager": "yarn@3.2.4",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "workspaces": [
     "packages/*"
   ],
@@ -41,6 +38,7 @@
   "devDependencies": {
     "@alienfast/config": "^8.1.9",
     "@alienfast/eslint-config": "^4.0.3",
+    "@lerna-lite/changed": "^1.12.0",
     "@lerna-lite/cli": "^1.12.0",
     "@lerna-lite/exec": "^1.12.0",
     "@lerna-lite/list": "^1.12.0",
@@ -79,7 +77,10 @@
     "@alienfast/logger-browser": "workspace:*",
     "@alienfast/logger-node": "workspace:*"
   },
-  "repository": "@alienfast/logger",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": "github:@alienfast/logger",
   "author": "Kevin Ross <kevin.ross@alienfast.com>",
   "auto": {
     "plugins": [
