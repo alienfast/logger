@@ -43,7 +43,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-browser@workspace:packages/logger-browser"
   dependencies:
-    "@alienfast/logger": ^11.0.4
+    "@alienfast/logger": ^11.0.5
     tsup: ^6.3.0
   languageName: unknown
   linkType: soft
@@ -52,7 +52,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-node@workspace:packages/logger-node"
   dependencies:
-    "@alienfast/logger": ^11.0.4
+    "@alienfast/logger": ^11.0.5
     chalk: ^5.1.2
     time-stamp: ^2.2.0
     tsup: ^6.3.0
