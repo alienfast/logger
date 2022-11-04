@@ -1,3 +1,15 @@
+# v11.0.9 (Fri Nov 04 2022)
+
+#### ⚠️ Pushed to `main`
+
+- cleanup, add back release:finalize ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.8 (Fri Nov 04 2022)
 
 #### 🐛 Bug Fix
