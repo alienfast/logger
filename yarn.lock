@@ -5,19 +5,19 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@alienfast/config@npm:^8.1.9":
-  version: 8.1.16
-  resolution: "@alienfast/config@npm:8.1.16::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Fconfig%2F8.1.16%2F342308c6525a132a25de7385d244cffda8416e41"
+"@alienfast/config@npm:^8.1.19":
+  version: 8.1.19
+  resolution: "@alienfast/config@npm:8.1.19::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Fconfig%2F8.1.19%2F024e370a7408cb7bff0fcaba699ff997d7eb94e9"
   dependencies:
-    "@alienfast/logger-node": ^11.0.3
+    "@alienfast/logger-node": ^11.0.7
     "@tsconfig/create-react-app": ^1.0.2
-  checksum: 103e577900bddf53c4992459a46ba0ec0b03c2de2293051cb9b09571a492e29a3603eb5c47d496390e8f006ee0b513bd9bb3e99e8f02436f7c3caed49c1da3c8
+  checksum: b373d0976f60d0e35388e2e34d57ad25ec234bd7edbfe1c586e7ba59133708006682967dfe520f79be49e5ca539bd0c8e7353a0fbde18ed5c9086ad81b4d2e2c
   languageName: node
   linkType: hard
 
-"@alienfast/eslint-config@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "@alienfast/eslint-config@npm:4.0.3::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Feslint-config%2F4.0.3%2F8ee8835831a987e1a8e84eacee44d87b1d29d682"
+"@alienfast/eslint-config@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "@alienfast/eslint-config@npm:4.0.5::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Feslint-config%2F4.0.5%2F14ced26399c98f2ffd810b296dc194e1780835dc"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.39.0
     "@typescript-eslint/parser": ^5.39.0
@@ -35,7 +35,7 @@ __metadata:
     eslint-plugin-unused-imports: ^2.0.0
   peerDependencies:
     prettier: "*"
-  checksum: 0d19a6ee56ff7e82798e7ae1afacf8d555dd6c0175ae0655a13a1ccb6fa48dcc4373a162b6385dbcf518a80ba9e8ca0eecb25e1dfba122bf61ac4901635df816
+  checksum: 87d0b26d08c50d51826bef1e68b6162ea7df31e495d0fca63e6c301a111201a745e20378001beb9c89040e5b133bab9b3bbd08e49d2fd9326384084045020b35
   languageName: node
   linkType: hard
 
@@ -43,8 +43,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-browser@workspace:packages/logger-browser"
   dependencies:
-    "@alienfast/logger": ^11.0.6
-    tsup: ^6.3.0
+    "@alienfast/logger": ^11.0.7
+    clean-package: ^2.1.2
+    tsup: ^6.4.0
   languageName: unknown
   linkType: soft
 
@@ -52,10 +53,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-node@workspace:packages/logger-node"
   dependencies:
-    "@alienfast/logger": ^11.0.6
+    "@alienfast/logger": ^11.0.7
     chalk: ^5.1.2
+    clean-package: ^2.1.2
     time-stamp: ^2.2.0
-    tsup: ^6.3.0
+    tsup: ^6.4.0
   languageName: unknown
   linkType: soft
 
@@ -63,9 +65,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger@workspace:packages/logger"
   dependencies:
-    "@types/node": ^18.11.5
-    tsup: ^6.3.0
-    vitest: ^0.24.3
+    "@types/node": ^18.11.9
+    clean-package: ^2.1.2
+    tsup: ^6.4.0
+    vitest: ^0.24.5
   languageName: unknown
   linkType: soft
 
@@ -1337,10 +1340,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.11.5":
+"@types/node@npm:*":
   version: 18.11.7
   resolution: "@types/node@npm:18.11.7"
   checksum: 69d630825cf6fbf580d08d76a4d4836ef8c34ed4fe0842221ade87d275f517099cbfabe8e22397208e564bd24926db97699ab9db5c091383269a432b336665e2
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.11.9":
+  version: 18.11.9
+  resolution: "@types/node@npm:18.11.9"
+  checksum: cc0aae109e9b7adefc32eecb838d6fad931663bb06484b5e9cbbbf74865c721b03d16fd8d74ad90e31dbe093d956a7c2c306ba5429ba0c00f3f7505103d7a496
   languageName: node
   linkType: hard
 
@@ -1998,14 +2008,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bundle-require@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "bundle-require@npm:3.1.0"
+"bundle-require@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "bundle-require@npm:3.1.2"
   dependencies:
     load-tsconfig: ^0.2.0
   peerDependencies:
     esbuild: ">=0.13"
-  checksum: e433dd18ad2ccaf9d210040c5ce300a8c60f4caf0472856fd5162ec407f7b5b3e0559e540aa92b7381a18a6ff2b45bbe9270dc2fd7ace17e445e72a9cbc7fa95
+  checksum: 71f8cb81bcde97825317b0e516b7e479ec70bd2370f55a8f02795c0df6d541e6562c4b9ec0427cc7b5b835103a8dcf306da04e3846fa468146358471490fcf81
   languageName: node
   linkType: hard
 
@@ -2193,6 +2203,17 @@ __metadata:
   version: 3.5.0
   resolution: "ci-info@npm:3.5.0"
   checksum: 7def3789706ec18db3dc371dc699bd0df12057d54b796201f50ba87200e0849d3d83c68da00ab2ab8cdd738d91b25ab9e31620588f8d7e64ffaa1f760fd121cf
+  languageName: node
+  linkType: hard
+
+"clean-package@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "clean-package@npm:2.1.2"
+  dependencies:
+    dot-object: ^2.1.3
+  bin:
+    clean-package: bin/main.js
+  checksum: 44341a09b0024205ab72ba76ea44cc8ed1ab7e54f269291fff1544d8ac58a3f6a290d153cefe0cb83cda1e2c09480a07842e60ddc1b12b62f5df2505816f5a54
   languageName: node
   linkType: hard
 
@@ -2863,6 +2884,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dot-object@npm:^2.1.3":
+  version: 2.1.4
+  resolution: "dot-object@npm:2.1.4"
+  dependencies:
+    commander: ^4.0.0
+    glob: ^7.1.5
+  bin:
+    dot-object: bin/dot-object
+  checksum: d56842129dead664e75089f7f610518dfe4d9548cec1b5f9b5df35ae916efe21e05a3b999f926ee73906a270c60f9a255d53968aa0becc8cf45ad7678b3dc626
+  languageName: node
+  linkType: hard
+
 "dot-prop@npm:^5.1.0":
   version: 5.3.0
   resolution: "dot-prop@npm:5.3.0"
@@ -3419,6 +3452,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-n@npm:^15.4.0":
+  version: 15.4.0
+  resolution: "eslint-plugin-n@npm:15.4.0"
+  dependencies:
+    builtins: ^5.0.1
+    eslint-plugin-es: ^4.1.0
+    eslint-utils: ^3.0.0
+    ignore: ^5.1.1
+    is-core-module: ^2.10.0
+    minimatch: ^3.1.2
+    resolve: ^1.22.1
+    semver: ^7.3.7
+  peerDependencies:
+    eslint: ">=7.0.0"
+  checksum: 30c82ea4af765d5c15afda0dc09302fd98963a2965b05c3f2a8048d586a78cc3ab53d9dbb3babbd1b926bdf9aab4e2c4353cce9088d8931000363fdbccc99b51
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-prettier@npm:^4.2.1":
   version: 4.2.1
   resolution: "eslint-plugin-prettier@npm:4.2.1"
@@ -3452,7 +3503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-storybook@npm:^0.6.4, eslint-plugin-storybook@npm:^0.6.6":
+"eslint-plugin-storybook@npm:^0.6.4":
   version: 0.6.6
   resolution: "eslint-plugin-storybook@npm:0.6.6"
   dependencies:
@@ -3463,6 +3514,20 @@ __metadata:
   peerDependencies:
     eslint: ">=6"
   checksum: 94c14db656d9ee28a57948d10d61542a9be9691b81272aeebbc9df45a8bd06054c41d8407d22cc6bd6b7cda11800c89f79cb97a6e65edb671f3663b29d6116ce
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-storybook@npm:^0.6.7":
+  version: 0.6.7
+  resolution: "eslint-plugin-storybook@npm:0.6.7"
+  dependencies:
+    "@storybook/csf": ^0.0.1
+    "@typescript-eslint/experimental-utils": ^5.3.0
+    requireindex: ^1.1.0
+    ts-dedent: ^2.2.0
+  peerDependencies:
+    eslint: ">=6"
+  checksum: ca1af54acbe21708e3afe3f4a82523e6d9ade06e6c88ae980f7abaf56c894da7a9388812c3cd8109944fffeb029ed08e49bce5a661612b780f9604cd02eba337
   languageName: node
   linkType: hard
 
@@ -4191,7 +4256,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4":
+"glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.5":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
   dependencies:
@@ -7293,7 +7358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.74.1, rollup@npm:^2.79.1":
+"rollup@npm:^2.79.1":
   version: 2.79.1
   resolution: "rollup@npm:2.79.1"
   dependencies:
@@ -7307,19 +7372,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup@npm:^3.2.5":
+  version: 3.2.5
+  resolution: "rollup@npm:3.2.5"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: 1779b778fe4b14f80a995a641d3a89a76e3651170536192022dce1821f1241ee49496353655aa812dc8f8334c89a302ad957b757d4370cf57e41ca270bb394fd
+  languageName: node
+  linkType: hard
+
 "root-workspace-0b6124@workspace:.":
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@alienfast/config": ^8.1.9
-    "@alienfast/eslint-config": ^4.0.3
+    "@alienfast/config": ^8.1.19
+    "@alienfast/eslint-config": ^4.0.5
     "@lerna-lite/changed": ^1.12.0
     "@lerna-lite/cli": ^1.12.0
     "@lerna-lite/exec": ^1.12.0
     "@lerna-lite/list": ^1.12.0
     "@rushstack/eslint-patch": ^1.2.0
     "@types/babel__core": ^7
-    "@types/node": ^18.11.5
+    "@types/node": ^18.11.9
     "@types/rimraf": ^3
     auto: ^10.37.6
     eslint: ^8.26.0
@@ -7328,11 +7407,11 @@ __metadata:
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-import: ^2.26.0
     eslint-plugin-jest: ^27.1.3
-    eslint-plugin-n: ^15.3.0
+    eslint-plugin-n: ^15.4.0
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-simple-import-sort: ^8.0.0
-    eslint-plugin-storybook: ^0.6.6
+    eslint-plugin-storybook: ^0.6.7
     eslint-plugin-unicorn: ^44.0.2
     eslint-plugin-unused-imports: ^2.0.0
     husky: ^8.0.1
@@ -7341,11 +7420,11 @@ __metadata:
     prettier: ^2.7.1
     rimraf: ^3.0.2
     ts-node: ^10.9.1
-    tsup: ^6.3.0
+    tsup: ^6.4.0
     typescript: ^4.8.4
-    vite: ^3.1.8
+    vite: ^3.2.2
     vite-tsconfig-paths: ^3.5.2
-    vitest: ^0.24.3
+    vitest: ^0.24.5
   languageName: unknown
   linkType: soft
 
@@ -8088,7 +8167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinybench@npm:^2.3.0":
+"tinybench@npm:^2.3.1":
   version: 2.3.1
   resolution: "tinybench@npm:2.3.1"
   checksum: 74d45fa546d964a8123f98847fc59550945ed7f0d3e5a4ce0f9596d836b51c1d340c2ae0277a8023c15dc9ea3d7cb948a79173bfc46338c9b367c6323ea1eaf3
@@ -8304,11 +8383,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsup@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "tsup@npm:6.3.0"
+"tsup@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "tsup@npm:6.4.0"
   dependencies:
-    bundle-require: ^3.1.0
+    bundle-require: ^3.1.2
     cac: ^6.7.12
     chokidar: ^3.5.1
     debug: ^4.3.1
@@ -8318,7 +8397,7 @@ __metadata:
     joycon: ^3.0.1
     postcss-load-config: ^3.0.1
     resolve-from: ^5.0.0
-    rollup: ^2.74.1
+    rollup: ^3.2.5
     source-map: 0.8.0-beta.0
     sucrase: ^3.20.3
     tree-kill: ^1.2.2
@@ -8336,7 +8415,7 @@ __metadata:
   bin:
     tsup: dist/cli-default.js
     tsup-node: dist/cli-node.js
-  checksum: f1fccd555a77ff82b3b3d4ce28188f5703695af5e9d593a4edcfc3807cbebb5b04e619ad9ae0b0c92830cbbcbf6d76356365a8986ebe82d7389151a4f66a6c49
+  checksum: a8bcb05265783c38e7c3a5c1d849736dda6122fc15ff78f4b76245cfe2bab93e0ddf74487cd5fe52e23d5fc7600dad154d0f5d1ed3dcc6b429b582d1dd4a49c9
   languageName: node
   linkType: hard
 
@@ -8643,7 +8722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.0.0, vite@npm:^3.1.8":
+"vite@npm:^3.0.0":
   version: 3.2.1
   resolution: "vite@npm:3.2.1"
   dependencies:
@@ -8678,9 +8757,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^0.24.3":
-  version: 0.24.3
-  resolution: "vitest@npm:0.24.3"
+"vite@npm:^3.2.2":
+  version: 3.2.2
+  resolution: "vite@npm:3.2.2"
+  dependencies:
+    esbuild: ^0.15.9
+    fsevents: ~2.3.2
+    postcss: ^8.4.18
+    resolve: ^1.22.1
+    rollup: ^2.79.1
+  peerDependencies:
+    less: "*"
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    less:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 7197ac91c612dda922367a95afa1b210353d6168d41845c186e2217bda1328d17b021b93d8089e336f9533b94645ae5dca18bb10937759f559c87006dd957fcd
+  languageName: node
+  linkType: hard
+
+"vitest@npm:^0.24.5":
+  version: 0.24.5
+  resolution: "vitest@npm:0.24.5"
   dependencies:
     "@types/chai": ^4.3.3
     "@types/chai-subset": ^1.3.3
@@ -8689,7 +8803,7 @@ __metadata:
     debug: ^4.3.4
     local-pkg: ^0.4.2
     strip-literal: ^0.4.2
-    tinybench: ^2.3.0
+    tinybench: ^2.3.1
     tinypool: ^0.3.0
     tinyspy: ^1.0.2
     vite: ^3.0.0
@@ -8712,7 +8826,7 @@ __metadata:
       optional: true
   bin:
     vitest: vitest.mjs
-  checksum: dd954f57396b81df466dd4346aa6c95709a1b3c2409d5526d3172fa34ec684f756a855f885778929a6b903a22b2517ff79d22f936fb3e4d7d54ff24e8e577459
+  checksum: 801d153082ec9d237d8720783dc939aa8c8a4cdd71625ddac997f99a98664b055a0e3efbcb3af648d44f0b8b80c014d48150b2c281870023628c1bdffa336d08
   languageName: node
   linkType: hard
 
