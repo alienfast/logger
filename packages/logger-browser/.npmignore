@@ -1,5 +1,0 @@
-.DS_Store
-.yarn
-tsconfig.*
-src
-node_modules
