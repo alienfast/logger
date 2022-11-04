@@ -1,6 +1,6 @@
 {
   "name": "@alienfast/logger-browser",
-  "version": "11.0.8",
+  "version": "11.0.9",
   "type": "module",
   "main-typings-note": "This is to appease tsc, typings will be removed by clean-package. see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build#workaround ",
   "main": "./dist/index.js",
@@ -21,7 +21,7 @@
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },
   "dependencies": {
-    "@alienfast/logger": "^11.0.8"
+    "@alienfast/logger": "^11.0.9"
   },
   "devDependencies": {
     "clean-package": "^2.1.2",
