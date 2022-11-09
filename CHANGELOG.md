@@ -1,3 +1,17 @@
+# v11.0.11 (Wed Nov 09 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - add debug location and update warning message ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.10 (Fri Nov 04 2022)
 
 #### ⚠️ Pushed to `main`

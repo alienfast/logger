@@ -1,3 +1,15 @@
+# v11.0.11 (Wed Nov 09 2022)
+
+#### ⚠️ Pushed to `main`
+
+- add debug location and update warning message ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.10 (Fri Nov 04 2022)
 
 #### ⚠️ Pushed to `main`
