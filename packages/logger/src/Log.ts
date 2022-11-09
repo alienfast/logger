@@ -93,7 +93,7 @@ export class Log {
       Logger.dumpConfiguration()
       throw new Error(
         'Logger.writer (global) was not set prior to attempt to write log.  Please use @alienfast/logger-browser or @alienfast/logger-node to initialize a writer at the entry point.  ' +
-          'NOTE: if you ran `yarn` in a subpackage of a monorepo, it may have been installed twice, causing this problem.  Run yarn clean && yarn install to remedy this case.',
+          "NOTE: This is likely because either a) two different @alienfast/logger versions are installed in monorepo package's node_modules, or; b) tsconfig paths are loading it from different node_modules.",
       )
     }
     Logger.writer.write(this.logConfig.name, level, ...args)
