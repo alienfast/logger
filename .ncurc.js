@@ -1,5 +1,5 @@
 module.exports = {
-  packageFile: './package.json', // [('./package.json', './packages/*/package.json')],
+  packageFile: './package.json',
   packageManager: 'yarn',
   workspaces: true,
   root: true,

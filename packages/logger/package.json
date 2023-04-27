@@ -20,7 +20,7 @@
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },
   "dependencies": {
-    "@types/node": "^18.16.1"
+    "@types/node": "^18.16.2"
   },
   "devDependencies": {
     "clean-package": "^2.2.0",

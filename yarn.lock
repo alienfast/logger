@@ -5,9 +5,9 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@alienfast/eslint-config@npm:^4.0.6":
-  version: 4.0.6
-  resolution: "@alienfast/eslint-config@npm:4.0.6::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Feslint-config%2F4.0.6%2F0b6191df9325ca88b6fe47dca88e3b6547e444a9"
+"@alienfast/eslint-config@npm:^4.0.7":
+  version: 4.0.7
+  resolution: "@alienfast/eslint-config@npm:4.0.7::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Feslint-config%2F4.0.7%2F5f60a1599c44971386efef0bfbdf681afd6bd213"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.59.1
     "@typescript-eslint/parser": ^5.59.1
@@ -25,7 +25,7 @@ __metadata:
     eslint-plugin-unused-imports: ^2.0.0
   peerDependencies:
     prettier: "*"
-  checksum: ea14b5691f4c8c25d80f4b0d5f202d2de654901bc3b213b5a369d82e5cd8c07d695e3676968bdbc069d08d25ede3cb16b3edd53cf206b81e060465381cb8c876
+  checksum: 96a4078f27d8802cde55fa8848673cb66b7dbfd3972538f61ecf2c36b8080f4abcdc89d27c239dbf442dfba936ae0b2f5ffc0c58ee3ae5b6a2fa5a831b6d5626
   languageName: node
   linkType: hard
 
@@ -55,7 +55,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger@workspace:packages/logger"
   dependencies:
-    "@types/node": ^18.16.1
+    "@types/node": ^18.16.2
     clean-package: ^2.2.0
     tsup: ^6.7.0
     vitest: ^0.30.1
@@ -1160,10 +1160,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.16.1":
-  version: 18.16.1
-  resolution: "@types/node@npm:18.16.1"
-  checksum: 799026b949a48993cba7c9b81b2eabfdfb34c880744cb44c1c990fbedc9e315f3634d126eb2cf9a6e0795577c01016e2326d98565bef695ada9d363fadeb6946
+"@types/node@npm:^18.16.2":
+  version: 18.16.2
+  resolution: "@types/node@npm:18.16.2"
+  checksum: 7ad66d23b3b93885a9f879bff98e0196790ad35589b47a3d81b52db969ad17ee298082020296df5166c2d72d3cd6a4b9ab34d254483637d967944a4b3e6febdb
   languageName: node
   linkType: hard
 
@@ -6608,7 +6608,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@alienfast/eslint-config": ^4.0.6
+    "@alienfast/eslint-config": ^4.0.7
     "@alienfast/tsconfig": ^1.0.1
     "@auto-it/all-contributors": ^10.46.0
     "@auto-it/first-time-contributor": ^10.46.0
@@ -6619,7 +6619,7 @@ __metadata:
     "@lerna-lite/list": ^2.1.0
     "@rushstack/eslint-patch": ^1.2.0
     "@types/babel__core": ^7
-    "@types/node": ^18.16.1
+    "@types/node": ^18.16.2
     "@types/rimraf": ^3
     auto: ^10.46.0
     eslint: ^8.39.0

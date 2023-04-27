@@ -36,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "@alienfast/eslint-config": "^4.0.6",
+    "@alienfast/eslint-config": "^4.0.7",
     "@alienfast/tsconfig": "^1.0.1",
     "@auto-it/all-contributors": "^10.46.0",
     "@auto-it/first-time-contributor": "^10.46.0",
@@ -47,7 +47,7 @@
     "@lerna-lite/list": "^2.1.0",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/babel__core": "^7",
-    "@types/node": "^18.16.1",
+    "@types/node": "^18.16.2",
     "@types/rimraf": "^3",
     "auto": "^10.46.0",
     "eslint": "^8.39.0",
