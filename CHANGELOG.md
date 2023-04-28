@@ -2,6 +2,20 @@
 
 #### 🐛 Bug Fix
 
+- fix small complaints from the release stage of ci [#6](https://github.com/alienfast/logger/pull/6) ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - update all, switch to reused @alienfast/tsconfig package, remove iter… [#5](https://github.com/alienfast/logger/pull/5) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
+# v11.0.12 (Fri Apr 28 2023)
+
+#### 🐛 Bug Fix
+
 - `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
   - update all, switch to reused @alienfast/tsconfig package, remove iter… [#5](https://github.com/alienfast/logger/pull/5) ([@rosskevin](https://github.com/rosskevin))
 

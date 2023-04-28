@@ -2,6 +2,20 @@
 
 #### 🐛 Bug Fix
 
+- Update CHANGELOG.md \[skip ci\] ([@rosskevin](https://github.com/rosskevin))
+- update all, switch to reused @alienfast/tsconfig package, remove iter… [#5](https://github.com/alienfast/logger/pull/5) ([@rosskevin](https://github.com/rosskevin))
+- update all, switch to reused @alienfast/tsconfig package, remove iterators.ts due to ts errors (simpler without) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
+# v11.0.12 (Fri Apr 28 2023)
+
+#### 🐛 Bug Fix
+
 - update all, switch to reused @alienfast/tsconfig package, remove iter… [#5](https://github.com/alienfast/logger/pull/5) ([@rosskevin](https://github.com/rosskevin))
 - update all, switch to reused @alienfast/tsconfig package, remove iterators.ts due to ts errors (simpler without) ([@rosskevin](https://github.com/rosskevin))
 
