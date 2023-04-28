@@ -1,15 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-
+  "extends": "@alienfast/tsconfig/node.json",
   "display": "Node related config files for IDE type checking and linting.  See packages/*/tsconfig.json for code.",
 
   "compilerOptions": {
     "noEmit": true,
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react-jsx",
     "allowJs": true
   },
   "include": [

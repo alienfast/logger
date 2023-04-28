@@ -1,14 +1,6 @@
-import rimraf from 'rimraf'
+import { rimraf } from 'rimraf'
 
-rimraf('./packages/*/dist/**/*.{js,js.map}', (error) => {
-  if (error) {
-    throw error
-  }
-})
+await rimraf('./packages/*/dist/**/*.{d.ts,d.ts.map}')
 
 // remove incremental build metadata - as it is no longer valid.
-rimraf('./**/tsconfig.tsbuildinfo', (error) => {
-  if (error) {
-    throw error
-  }
-})
+await rimraf('./**/tsconfig.tsbuildinfo')

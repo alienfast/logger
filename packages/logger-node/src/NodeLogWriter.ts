@@ -35,7 +35,7 @@ export class NodeLogWriter implements LogWriter {
   private toArgs(name: string, levelName: string, levelColor: ChalkInstance, args: any[]): any[] {
     return [
       `${chalk.grey(timestamp('HH:mm:ss'))}`,
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+
       `${levelColor(levelName)} ${chalk.inverse(levelColor(' ' + name + ' '))}`,
       ...args,
     ]

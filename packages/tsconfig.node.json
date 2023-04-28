@@ -1,11 +1,12 @@
 {
-  "extends": "@alienfast/config/tsconfig.node.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@alienfast/tsconfig/node.json",
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
       "@alienfast/logger": ["./logger/src"],
       "@alienfast/logger-browser": ["./logger-browser/src"],
-      "@alienfast/logger-node": ["./logger-node/src"],
+      "@alienfast/logger-node": ["./logger-node/src"]
     }
   }
 }

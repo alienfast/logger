@@ -23,8 +23,8 @@
     "@alienfast/logger": "^11.0.11"
   },
   "devDependencies": {
-    "clean-package": "^2.1.2",
-    "tsup": "^6.4.0"
+    "clean-package": "^2.2.0",
+    "tsup": "^6.7.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
