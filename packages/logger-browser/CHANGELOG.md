@@ -1,3 +1,17 @@
+# v11.0.13 (Sat Apr 29 2023)
+
+#### 🐛 Bug Fix
+
+- Fix type exports/add back workaround [#7](https://github.com/alienfast/logger/pull/7) ([@rosskevin](https://github.com/rosskevin))
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+- Add back unfortunate workaround for types, add back releaseFinalize for cleaner packages ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.12 (Fri Apr 28 2023)
 
 #### 🐛 Bug Fix

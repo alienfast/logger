@@ -1,3 +1,16 @@
+# v11.0.13 (Sat Apr 29 2023)
+
+#### 🐛 Bug Fix
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - Fix type exports/add back workaround [#7](https://github.com/alienfast/logger/pull/7) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.12 (Fri Apr 28 2023)
 
 #### 🐛 Bug Fix
