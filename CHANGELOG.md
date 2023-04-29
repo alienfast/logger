@@ -1,3 +1,15 @@
+# v11.0.14 (Sat Apr 29 2023)
+
+#### 🐛 Bug Fix
+
+- Fix unreleased types/bad pretsup cleanup [#8](https://github.com/alienfast/logger/pull/8) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.13 (Sat Apr 29 2023)
 
 #### 🐛 Bug Fix
