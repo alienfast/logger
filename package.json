@@ -10,7 +10,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "run-s clean build:ide pretsup build:tsup",
+    "build": "run-s clean build:ide pretsup build:tsup release:finalize",
     "build:ide": "echo 'tsc -b' && tsc -b",
     "build:tsup": "lerna exec --stream --parallel -- yarn build",
     "pretsup": "echo 'removing js' && node ./scripts/pre-tsup.js",
@@ -18,7 +18,8 @@
     "clean:yarn": "rimraf yarn.lock node_modules .yarn/install-state.gz && yarn cache clean",
     "lint:fix": "eslint . --cache --ext .js,.ts,.tsx --fix",
     "test": "lerna exec --stream --parallel -- yarn test",
-    "release": "yarn auto shipit"
+    "release": "yarn auto shipit",
+    "release:finalize": "lerna exec --stream --parallel -- releaseFinalize"
   },
   "husky": {
     "hooks": {
@@ -36,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "@alienfast/ci": "^8.1.19",
     "@alienfast/eslint-config": "^4.0.7",
     "@alienfast/tsconfig": "^1.0.1",
     "@auto-it/all-contributors": "^10.46.0",
