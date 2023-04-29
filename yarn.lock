@@ -102,7 +102,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-browser@workspace:packages/logger-browser"
   dependencies:
-    "@alienfast/logger": ^11.0.12
+    "@alienfast/logger": ^11.0.13
     clean-package: ^2.2.0
     tsup: ^6.7.0
   languageName: unknown
@@ -112,7 +112,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-node@workspace:packages/logger-node"
   dependencies:
-    "@alienfast/logger": ^11.0.12
+    "@alienfast/logger": ^11.0.13
     chalk: ^5.2.0
     clean-package: ^2.2.0
     time-stamp: ^2.2.0
