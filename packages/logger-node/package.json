@@ -1,6 +1,6 @@
 {
   "name": "@alienfast/logger-node",
-  "version": "11.0.14",
+  "version": "11.0.15",
   "type": "module",
   "main-types-note": "This is to appease tsc, types will be removed by clean-package. see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build#workaround ",
   "main": "./dist/index.js",
@@ -19,7 +19,7 @@
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },
   "dependencies": {
-    "@alienfast/logger": "^11.0.14",
+    "@alienfast/logger": "^11.0.15",
     "chalk": "^5.2.0",
     "time-stamp": "^2.2.0"
   },
