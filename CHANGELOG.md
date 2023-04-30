@@ -1,3 +1,17 @@
+# v11.0.15 (Sun Apr 30 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - Don’t clean before running tsup (workaround for dts generation with project references) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.14 (Sat Apr 29 2023)
 
 #### 🐛 Bug Fix

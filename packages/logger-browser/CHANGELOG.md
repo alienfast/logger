@@ -1,3 +1,15 @@
+# v11.0.15 (Sun Apr 30 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Don’t clean before running tsup (workaround for dts generation with project references) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.13 (Sat Apr 29 2023)
 
 #### 🐛 Bug Fix
