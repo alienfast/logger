@@ -19,7 +19,7 @@
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },
   "dependencies": {
-    "@alienfast/logger": "^11.0.15"
+    "@alienfast/logger": "workspace:*"
   },
   "devDependencies": {
     "clean-package": "^2.2.0",
