@@ -1,3 +1,16 @@
+# v11.0.16 (Thu Jun 01 2023)
+
+#### 🐛 Bug Fix
+
+- switch to yarn workspace versioning, ncu [#9](https://github.com/alienfast/logger/pull/9) ([@rosskevin](https://github.com/rosskevin))
+- switch to yarn workspace versioning, ncu ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.15 (Sun Apr 30 2023)
 
 #### ⚠️ Pushed to `main`
