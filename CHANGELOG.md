@@ -1,3 +1,16 @@
+# v11.0.17 (Thu Jun 22 2023)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - ncu && tsup do not include externals (required self log writer to get around releaseFinalize peerDep error) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.16 (Thu Jun 01 2023)
 
 #### 🐛 Bug Fix
