@@ -1,3 +1,16 @@
+# v11.0.19 (Fri Jun 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - use tsup-node for paranoia’s sake ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.18 (Fri Jun 23 2023)
 
 #### ⚠️ Pushed to `main`
