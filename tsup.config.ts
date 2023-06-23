@@ -9,6 +9,9 @@ export default defineConfig({
   format: ['esm'],
   // minify: true,
 
+  // @see https://tsup.egoist.dev/#excluding-packages
+  // * Use tsup-node exe instead of specifying externals so we _force_ pure esm.  Using `tsup` alone was bundling some react deps
+
   // * Important: require a tsconfig.build.json in each package to omit project references otherwise some monorepo src get bundled
   tsconfig: 'tsconfig.build.json',
 })
