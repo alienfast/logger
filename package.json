@@ -19,7 +19,7 @@
     "lint:fix": "eslint . --cache --ext .js,.ts,.tsx --fix",
     "test": "lerna exec --stream --parallel -- yarn test",
     "release": "yarn auto shipit",
-    "release:finalize": "FORCE_LOG_WRITER=node lerna exec --stream --parallel -- releaseFinalize"
+    "release:finalize": "lerna exec --stream --parallel -- releaseFinalize"
   },
   "husky": {
     "hooks": {
@@ -37,7 +37,7 @@
     ]
   },
   "devDependencies": {
-    "@alienfast/ci": "^8.2.6",
+    "@alienfast/ci": "^8.2.7",
     "@alienfast/eslint-config": "^4.0.7",
     "@alienfast/logger": "workspace:*",
     "@alienfast/tsconfig": "^1.0.1",

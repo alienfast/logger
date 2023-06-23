@@ -60,7 +60,7 @@ export class Logger {
   public static dumpConfiguration() {
     console.info('Loggers configured:')
     console.info('\twriter', this.writer)
-    console.info('\tFORCE_LOG_WRITER', process && process.env && process.env.FORCE_LOG_WRITER)
+    // console.info('\tFORCE_LOG_WRITER', process && process.env && process.env.FORCE_LOG_WRITER)
     console.info('\tlocation', import.meta.url)
     console.info('\tsystemThreshold', this.systemThreshold)
     console.info('\tdefaultThreshold', this.defaultThreshold)

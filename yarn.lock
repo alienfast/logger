@@ -5,20 +5,20 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@alienfast/ci@npm:^8.2.6":
-  version: 8.2.6
-  resolution: "@alienfast/ci@npm:8.2.6::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Fci%2F8.2.6%2F0372ab5390e7a920bb10cfe28342733385ee9b1c"
+"@alienfast/ci@npm:^8.2.7":
+  version: 8.2.7
+  resolution: "@alienfast/ci@npm:8.2.7::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Fci%2F8.2.7%2F451a5117b38f90bdce2e2d84f95bfbc7bf42d845"
   dependencies:
-    "@alienfast/common": 8.2.6
-    "@alienfast/common-node": 8.2.6
-    "@alienfast/logger": ^11.0.16
-    "@alienfast/logger-node": ^11.0.16
+    "@alienfast/common": 8.2.7
+    "@alienfast/common-node": 8.2.7
+    "@alienfast/logger": ^11.0.17
+    "@alienfast/logger-node": ^11.0.17
     "@types/lodash-es": ^4
     date-fns: ^2.30.0
     execa: ^7.1.1
     lodash-es: ^4.17.21
     randomatic: ^3.1.1
-    semver: ^7.5.2
+    semver: ^7.5.3
     yargs: ^17.7.2
   bin:
     gcpActivateBuildSA: ./dist/bin/gcpActivateBuildSA.js
@@ -36,15 +36,15 @@ __metadata:
     releasePublishAll: ./dist/bin/releasePublishAll.js
     releaseStart: ./dist/bin/releaseStart.js
     releaseVersion: ./dist/bin/releaseVersion.js
-  checksum: c00f2949360fcb829a09db5feca9b6a6d20c57d83bf259f73f610b348d7ebe56fb14919ab44c6719d7b5803a8433071cd6b9d7225b95bc2feb09446dfb2b0357
+  checksum: 6113319ff48bde553bd88d4666fbb8fcacd4fe38a2a810f1269cdea3e295974b77468dea19b7d59ccd2aeac571d91daa43e80ac7743eb53d89ca4b280c21e64b
   languageName: node
   linkType: hard
 
-"@alienfast/common-node@npm:8.2.6":
-  version: 8.2.6
-  resolution: "@alienfast/common-node@npm:8.2.6::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Fcommon-node%2F8.2.6%2F32126498c8a92745b3d486d5935aae1856d61157"
+"@alienfast/common-node@npm:8.2.7":
+  version: 8.2.7
+  resolution: "@alienfast/common-node@npm:8.2.7::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Fcommon-node%2F8.2.7%2F6ae27d6fbbdac780711ac208d3469802e9903254"
   dependencies:
-    "@alienfast/logger": ^11.0.16
+    "@alienfast/logger": ^11.0.17
     "@types/findup-sync": ^4.0.2
     "@types/js-yaml": ^4.0.5
     "@types/lodash-es": ^4
@@ -55,22 +55,22 @@ __metadata:
     execa: ^7.1.1
     findup-sync: ^5.0.0
     glob-all: ^3.3.1
-    i18next: ^23.1.0
+    i18next: ^23.2.3
     js-yaml: ^4.1.0
     lodash-es: ^4.17.21
     strip-json-comments: ^5.0.0
-  checksum: 2370e367cf270509607718984178a361ac50f00fd4d8dbad89a3d0edfcee7fee539fad2f3299bc399aad80314d0985d160a5ddf7fd791ff25d02365808ce7a2c
+  checksum: 74eee50dca6ff34e0b42e5a04a6da02217166fc47e4e46b2db4d2c784b2666172c665644ff8da81ed7a07a78511f8d03b0a4c1db56a0359e688b1a570e5568d5
   languageName: node
   linkType: hard
 
-"@alienfast/common@npm:8.2.6":
-  version: 8.2.6
-  resolution: "@alienfast/common@npm:8.2.6::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Fcommon%2F8.2.6%2F59808ca8133dcef5d3f663d7d1bbfc5455d8a482"
+"@alienfast/common@npm:8.2.7":
+  version: 8.2.7
+  resolution: "@alienfast/common@npm:8.2.7::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Fcommon%2F8.2.7%2Fd6e78c0fbb33d889acb87e9da6228eaa86568106"
   dependencies:
     "@types/lodash-es": ^4
-    i18next: ^23.1.0
+    i18next: ^23.2.3
     lodash-es: ^4.17.21
-  checksum: 260e712591d6e4f6e03c5d3aa8ba6f1404379ea1789be9fcac85ca7623286b2002849bc15cb2d4b950bbf1347f73d0909a90b29459fdc88bfbdf8717ab3aacb6
+  checksum: 2e2b3f323f18a15df0cc7ccb15d70130c51d848513c532ab0ddeaea404f359f81ad13c198dfd96f47b98841a18ce2889ab40714ee9181416d518b60b44319cbf
   languageName: node
   linkType: hard
 
@@ -110,7 +110,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@alienfast/logger-node@^11.0.16, @alienfast/logger-node@workspace:*, @alienfast/logger-node@workspace:packages/logger-node":
+"@alienfast/logger-node@^11.0.17, @alienfast/logger-node@workspace:*, @alienfast/logger-node@workspace:packages/logger-node":
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-node@workspace:packages/logger-node"
   dependencies:
@@ -124,10 +124,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@alienfast/logger@^11.0.16, @alienfast/logger@workspace:*, @alienfast/logger@workspace:packages/logger":
+"@alienfast/logger@^11.0.17, @alienfast/logger@workspace:*, @alienfast/logger@workspace:packages/logger":
   version: 0.0.0-use.local
   resolution: "@alienfast/logger@workspace:packages/logger"
   dependencies:
+    "@alienfast/ci": ^8.2.7
     "@alienfast/logger-node": "workspace:*"
     "@types/node": ^20.3.1
     clean-package: ^2.2.0
@@ -5544,7 +5545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^23.1.0":
+"i18next@npm:^23.2.3":
   version: 23.2.3
   resolution: "i18next@npm:23.2.3"
   dependencies:
@@ -8583,7 +8584,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@alienfast/ci": ^8.2.6
+    "@alienfast/ci": ^8.2.7
     "@alienfast/eslint-config": ^4.0.7
     "@alienfast/logger": "workspace:*"
     "@alienfast/tsconfig": ^1.0.1
@@ -8748,7 +8749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.5.2":
+"semver@npm:^7.5.2, semver@npm:^7.5.3":
   version: 7.5.3
   resolution: "semver@npm:7.5.3"
   dependencies:

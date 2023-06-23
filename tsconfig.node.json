@@ -12,7 +12,7 @@
     "vite.config.ts",
     "vitest.config.ts",
     "tsup.config.ts",
-    "./packages/*/tsup.config.ts",
+    "./packages/*/tsup.*.ts",
     "scripts/*.js",
     ".storybook/*.ts*",
     ".storybook/preview.tsx",

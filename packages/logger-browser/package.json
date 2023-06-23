@@ -14,7 +14,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "test": "echo 'no tests'",
-    "build": "tsup-node --config ../../tsup.config.ts",
+    "build": "tsup --config ../../tsup.config.ts",
     "prepack": "clean-package -c ../../.clean-package.json",
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },

@@ -8,4 +8,7 @@ export default defineConfig({
   clean: false, // ^^^ need to keep the dts we generate as a workaround
   format: ['esm'],
   // minify: true,
+
+  // * Important: require a tsconfig.build.json in each package to omit project references otherwise some monorepo src get bundled
+  tsconfig: 'tsconfig.build.json',
 })

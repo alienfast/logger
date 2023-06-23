@@ -4,15 +4,14 @@ import { jsonify } from './jsonify'
 import { Level } from './Level'
 import { LogConfig } from './LogConfig'
 import { Logger } from './Logger'
-import { LogWriter } from './LogWriter'
 
 const NOLOG = typeof process !== 'undefined' && process.env.NOLOG
 
-class SelfBuildLogWriter implements LogWriter {
-  public write(name: string, level: Level, ...args: any[]) {
-    console.log(...args)
-  }
-}
+// class SelfBuildLogWriter implements LogWriter {
+//   public write(name: string, level: Level, ...args: any[]) {
+//     console.log(...args)
+//   }
+// }
 
 export class Log {
   public logConfig: LogConfig
@@ -98,11 +97,11 @@ export class Log {
   private writeLog(level: Level, ...args: any[]) {
     if (!Logger.writer) {
       // if in fact we are building our own logger repo, we need to force this setting because elsewhere we rely on peer dependency
-      if (process && process.env && process.env.FORCE_LOG_WRITER === 'node') {
-        console.warn('Forcing Logger.writer to SelfBuildLogWriter')
-        Logger.writer = new SelfBuildLogWriter()
-        return
-      }
+      // if (process && process.env && process.env.FORCE_LOG_WRITER === 'node') {
+      //   console.warn('Forcing Logger.writer to SelfBuildLogWriter')
+      //   Logger.writer = new SelfBuildLogWriter()
+      //   return
+      // }
 
       Logger.dumpConfiguration()
       throw new Error(
