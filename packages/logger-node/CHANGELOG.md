@@ -1,3 +1,15 @@
+# v11.0.18 (Fri Jun 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Fix dist and bundling of monorepo deps due to tsup using/including code from project references ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.17 (Thu Jun 22 2023)
 
 #### ⚠️ Pushed to `main`
