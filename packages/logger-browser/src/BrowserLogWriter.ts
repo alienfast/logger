@@ -39,14 +39,12 @@ const LevelStyle = {
 
 const isHeadlessChrome = browser.isHeadlessChrome()
 const isAlienFastChrome = browser.isAlienFastChrome()
-// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-const isMocha = typeof (global as any).it === 'function'
-const isDumbTerminal = isHeadlessChrome || isMocha || isNode || isAlienFastChrome
+
+const isDumbTerminal = isHeadlessChrome || isNode || isAlienFastChrome
 
 // function dump() {
 //   browser.dump()
 //   console.info(`isNode?: ${isNode}`)
-//   console.info(`isMocha?: ${isMocha}`)
 //   console.info(`isDumbTerminal?: ${isDumbTerminal}`)
 // }
 
@@ -55,7 +53,7 @@ const isDumbTerminal = isHeadlessChrome || isMocha || isNode || isAlienFastChrom
 // }
 
 // in jest instead import @alienfast/logger-node to get this behavior
-// if (isMocha || isNode) {
+// if (isNode) {
 //   // do a dynamic require of chalk only if we are in the node environment
 //   const chalk = require('chalk')
 //   chalk.enabled = true
