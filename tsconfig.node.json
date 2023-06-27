@@ -9,8 +9,8 @@
   },
   "include": [
     ".eslintrc.cjs",
-    "vite.config.ts",
-    "vitest.config.ts",
+    "vite*.ts",
+    "./packages/*/vite*.ts",
     "tsup.config.ts",
     "./packages/*/tsup.*.ts",
     "scripts/*.js",
