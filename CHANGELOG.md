@@ -1,3 +1,16 @@
+# v11.0.20 (Tue Jun 27 2023)
+
+#### 🐛 Bug Fix
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - Switch to vite [#10](https://github.com/alienfast/logger/pull/10) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.19 (Fri Jun 23 2023)
 
 #### ⚠️ Pushed to `main`
