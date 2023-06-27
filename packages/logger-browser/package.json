@@ -14,14 +14,14 @@
   "license": "UNLICENSED",
   "scripts": {
     "test": "echo 'no tests'",
-    "build": "tsup-node --config ../../tsup.config.ts",
+    "build": "vite build -c ../../vite.config.lib.ts",
     "prepack": "clean-package -c ../../.clean-package.json",
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },
   "devDependencies": {
     "@alienfast/logger": "workspace:*",
     "clean-package": "^2.2.0",
-    "tsup": "^7.0.0"
+    "vite": "^4.3.9"
   },
   "peerDependencies": {
     "@alienfast/logger": "*"
