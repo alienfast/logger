@@ -73,7 +73,7 @@ export class BrowserLogWriter implements LogWriter {
 
       switch (level) {
         case Level.DEBUG:
-          console.debug(...msg)
+          isDumbTerminal ? console.info(...msg) : console.debug(...msg)
           break
         case Level.INFO:
           console.info(...msg)
