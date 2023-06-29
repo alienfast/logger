@@ -1,3 +1,16 @@
+# v11.0.21 (Thu Jun 29 2023)
+
+#### 🐛 Bug Fix
+
+- `@alienfast/logger-browser`
+  - add back browser logging colors ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.20 (Tue Jun 27 2023)
 
 #### 🐛 Bug Fix
