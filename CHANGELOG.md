@@ -1,3 +1,16 @@
+# v11.0.22 (Thu Jun 29 2023)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger-browser`
+  - differentiate console.debug in browser from dumb terminal ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.21 (Thu Jun 29 2023)
 
 #### 🐛 Bug Fix
