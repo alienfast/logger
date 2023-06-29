@@ -4,35 +4,30 @@
 /* eslint-disable no-console */
 import { browser, isNode, jsonify, Level, LogWriter } from '@alienfast/logger'
 
+// console-log-colors could be a good alternative here that implements chalk api on the browser
+
 const DEBUG = false
-const OBJECT = 'font-size: 9px; background: grey; color: #fff; padding: 0 3px;'
-const END_SPAN = 'background: none; color: #000;'
-// const NO_CHALK = (style: string) => {}
 const LevelStyle = {
   [Level.DEBUG]: {
-    // chalk: NO_CHALK,
-    label: 'debug',
-    level: 'background: #303da5; color: #fff; padding: 0 5px;',
-    text: '',
+    label: 'debug', // #303da5
+    level: 'font-size: 9px; background: #1795de; color: #fff; padding: 0 3px;',
+    text: 'color: #1795de;',
   },
   [Level.ERROR]: {
-    // chalk: NO_CHALK,
     label: 'error',
-    level: 'background: #d9534f; color: #fff; padding: 0 5px;',
+    level: 'font-size: 9px; background: #d9534f; color: #fff; padding: 0 3px;',
     text: 'color: #d9534f;',
   },
   [Level.INFO]: {
-    // chalk: NO_CHALK,
     label: 'info',
-    level: 'background: #1795de; color: #fff; padding: 0 8px;',
-    text: '',
+    level: 'font-size: 9px; background: grey; color: #fff; padding: 0 3px;',
+    text: 'color: grey;',
   },
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   prefix: (name: string, style: any): string => `[${name}][${style.label}]`,
   [Level.WARN]: {
-    // chalk: NO_CHALK,
     label: 'warn',
-    level: 'background: #f0ad4e; color: #fff; padding: 0 8px;',
+    level: 'font-size: 9px; background: #f0ad4e; color: #fff; padding: 0 3px;',
     text: 'color: #f0ad4e;',
   },
 }
@@ -50,21 +45,6 @@ const isDumbTerminal = isHeadlessChrome || isNode || isAlienFastChrome
 
 // if (DEBUG) {
 //   dump()
-// }
-
-// in jest instead import @alienfast/logger-node to get this behavior
-// if (isNode) {
-//   // do a dynamic require of chalk only if we are in the node environment
-//   const chalk = require('chalk')
-//   chalk.enabled = true
-//   LevelStyle.prefix = (name: string, style) => {
-//     // return `        ${chalk.inverse(' ' + name + ' ')} ${String(style.chalk(style.label))}`
-//     return `${chalk.inverse(chalk.grey(' ' + name + ' '))} ${style.chalk(style.label)}`
-//   }
-//   LevelStyle[Level.DEBUG].chalk = chalk.blue
-//   LevelStyle[Level.INFO].chalk = chalk.grey
-//   LevelStyle[Level.WARN].chalk = chalk.yellow
-//   LevelStyle[Level.ERROR].chalk = chalk.red
 // }
 
 export class BrowserLogWriter implements LogWriter {
@@ -88,13 +68,12 @@ export class BrowserLogWriter implements LogWriter {
         msg = [[LevelStyle.prefix(name, style), ...jsonifiedArgs].join(' ')]
       } else {
         // browser - write the stylized output for better visuals
-        msg = [`%c${name}%c`, OBJECT, END_SPAN, ...args]
+        msg = [`%c${name}%c %s`, LevelStyle[level].level, LevelStyle[level].text, ...args]
       }
 
       switch (level) {
         case Level.DEBUG:
-          // use info to avoid the 'All Levels' selection in the chrome console
-          console.info(...msg)
+          console.debug(...msg)
           break
         case Level.INFO:
           console.info(...msg)
