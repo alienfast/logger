@@ -1,3 +1,15 @@
+# v11.0.23 (Mon Jul 31 2023)
+
+#### ⚠️ Pushed to `main`
+
+- ncu, fix lint/type errors - no code changes ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.22 (Thu Jun 29 2023)
 
 #### ⚠️ Pushed to `main`
