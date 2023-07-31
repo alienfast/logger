@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-enum-comparison */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable no-console */
 import { jsonify } from './jsonify'

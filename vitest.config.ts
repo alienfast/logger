@@ -1,4 +1,5 @@
 import { mergeConfig } from 'vite'
+import { UserConfig } from 'vitest'
 import { defineConfig } from 'vitest/config'
 
 import viteConfig from './vite.config'
@@ -22,5 +23,5 @@ export default mergeConfig(
       // ❯ Object.<anonymous> ../../node_modules/@alienfast/logger-node/dist/index.cjs:1:660
       // ❯ Users/kross/projects/tools/packages/config/src/jest/testSetup.js:53:1
     },
-  }),
+  }) as UserConfig,
 )

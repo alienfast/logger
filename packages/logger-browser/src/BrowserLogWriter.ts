@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
@@ -23,7 +24,7 @@ const LevelStyle = {
     level: 'font-size: 9px; background: grey; color: #fff; padding: 0 3px;',
     text: 'color: grey;',
   },
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
   prefix: (name: string, style: any): string => `[${name}][${style.label}]`,
   [Level.WARN]: {
     label: 'warn',
