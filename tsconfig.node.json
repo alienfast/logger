@@ -12,6 +12,7 @@
     "vite*.ts",
     "./packages/*/vite*.ts",
     "tsup.config.ts",
+    "./typings/**/*",
     "./packages/*/tsup.*.ts",
     "scripts/*.js",
     ".storybook/*.ts*",

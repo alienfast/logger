@@ -1,9 +1,9 @@
-import { configureLoggers, Logger, LoggersConfig } from '@alienfast/logger'
+import { configureLoggers, LoggersConfig } from '@alienfast/logger'
 
 import { BrowserLogWriter } from './BrowserLogWriter'
 
 export function initializeBrowserLogger(loggersConfig?: LoggersConfig) {
-  Logger.writer = new BrowserLogWriter()
+  globalThis.logWriter = new BrowserLogWriter()
   if (loggersConfig) {
     configureLoggers(loggersConfig)
   }

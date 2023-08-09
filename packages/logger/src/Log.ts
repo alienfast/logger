@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-enum-comparison */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable no-console */
+
 import { jsonify } from './jsonify'
 import { Level } from './Level'
 import { LogConfig } from './LogConfig'
@@ -96,20 +97,19 @@ export class Log {
   }
 
   private writeLog(level: Level, ...args: any[]) {
-    if (!Logger.writer) {
+    if (!globalThis.logWriter) {
       // if in fact we are building our own logger repo, we need to force this setting because elsewhere we rely on peer dependency
       // if (process && process.env && process.env.FORCE_LOG_WRITER === 'node') {
-      //   console.warn('Forcing Logger.writer to SelfBuildLogWriter')
-      //   Logger.writer = new SelfBuildLogWriter()
+      //   console.warn('Forcing globalThis.logWriter to SelfBuildLogWriter')
+      //   globalThis.logWriter = new SelfBuildLogWriter()
       //   return
       // }
 
       Logger.dumpConfiguration()
       throw new Error(
-        'Logger.writer (global) was not set prior to attempt to write log.  Please use @alienfast/logger-browser or @alienfast/logger-node to initialize a writer at the entry point.  ' +
-          "NOTE: This is likely because either a) two different @alienfast/logger versions are installed in monorepo package's node_modules, or; b) tsconfig paths are loading it from different node_modules.",
+        'globalThis.logWriter was not set prior to attempt to write log.  Please use @alienfast/logger-browser or @alienfast/logger-node to initialize a writer at the entry point.',
       )
     }
-    Logger.writer.write(this.logConfig.name, level, ...args)
+    globalThis.logWriter.write(this.logConfig.name, level, ...args)
   }
 }

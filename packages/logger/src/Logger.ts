@@ -1,14 +1,10 @@
 /* eslint-disable no-console */
-
 import { Level } from './Level'
 import { Log } from './Log'
-import { LogWriter } from './LogWriter'
 import { objectName } from './objects'
 import { LevelOrBoolean, toLevel } from './toLevel'
 
 export class Logger {
-  public static writer: LogWriter
-
   public static logs: { [key: string]: Log } = {}
 
   /**
@@ -54,12 +50,13 @@ export class Logger {
       // )
     }
 
-    return logWriter
+    return logWriterF
   }
 
   public static dumpConfiguration() {
+    // window.logWriter = null
     console.info('Loggers configured:')
-    console.info('\twriter', this.writer)
+    console.info('\tglobalThis.logWriter', globalThis.logWriter)
     // console.info('\tFORCE_LOG_WRITER', process && process.env && process.env.FORCE_LOG_WRITER)
     console.info('\tlocation', import.meta.url)
     console.info('\tsystemThreshold', this.systemThreshold)

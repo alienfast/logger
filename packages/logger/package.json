@@ -11,7 +11,7 @@
       "import": "./dist/index.js"
     }
   },
-  "sideEffects": true,
+  "sideEffects": false,
   "license": "UNLICENSED",
   "scripts": {
     "test": "vitest",
