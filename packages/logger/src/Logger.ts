@@ -50,7 +50,7 @@ export class Logger {
       // )
     }
 
-    return logWriterF
+    return logWriter
   }
 
   public static dumpConfiguration() {
