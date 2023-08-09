@@ -1,3 +1,19 @@
+# v11.0.24 (Wed Aug 09 2023)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger`
+  - accidental typo when committing? ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - Switch to using globalThis to maintain the logWriter instead of the error prone static expected to be in a singleton package ([@rosskevin](https://github.com/rosskevin))
+  - ncu and add reset script ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.23 (Mon Jul 31 2023)
 
 #### ⚠️ Pushed to `main`
