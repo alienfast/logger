@@ -8,7 +8,8 @@ import { LogWriter } from './LogWriter'
 export {}
 
 declare global {
+  // NOTE: global variables declared with let and const don’t show up on globalThis.
   // eslint-disable-next-line no-var
   var logWriter: LogWriter
-  // Note that global variables declared with let and const don’t show up on globalThis.
+  var logs: Record<string, Log>
 }

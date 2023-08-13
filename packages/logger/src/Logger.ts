@@ -4,8 +4,12 @@ import { Log } from './Log'
 import { objectName } from './objects'
 import { LevelOrBoolean, toLevel } from './toLevel'
 
+if (!globalThis.logs) {
+  globalThis.logs = {}
+}
+
 export class Logger {
-  public static logs: { [key: string]: Log } = {}
+  // public static logs: { [key: string]: Log } = {}
 
   /**
    * The default threshold for any new Log
@@ -31,7 +35,7 @@ export class Logger {
     }
     const name = objectName(object)
 
-    let logWriter = this.logs[name]
+    let logWriter = globalThis.logs[name]
     if (!logWriter) {
       // need to delay resolution of LogWriter, so pass this in.
       logWriter = new Log({
@@ -39,7 +43,7 @@ export class Logger {
         systemThreshold: this.systemThreshold,
         threshold: toLevel(threshold, this.defaultThreshold),
       })
-      this.logs[name] = logWriter
+      globalThis.logs[name] = logWriter
       // console.log(`Log [${name}] set to ${threshold || this.defaultThreshold}`)
     } else if (overwrite) {
       logWriter.logConfig.threshold = threshold as Level
@@ -64,7 +68,7 @@ export class Logger {
     console.info('\tDEBUG is', Level.DEBUG)
     console.info('\tINFO is', Level.INFO)
     console.info('\tConfigurations:')
-    const sortedKeys = Object.keys(this.logs).sort()
+    const sortedKeys = Object.keys(globalThis.logs).sort()
     for (const key of sortedKeys) {
       console.info(`\t\t${key}: ${Logger.get(key).logConfig.threshold}`)
     }
