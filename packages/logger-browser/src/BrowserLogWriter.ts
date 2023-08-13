@@ -74,7 +74,8 @@ export class BrowserLogWriter implements LogWriter {
 
       switch (level) {
         case Level.DEBUG:
-          isDumbTerminal ? console.info(...msg) : console.debug(...msg)
+          // isDumbTerminal ? console.info(...msg) : console.debug(...msg)
+          console.info(...msg) // this must be info for selenium to capture
           break
         case Level.INFO:
           console.info(...msg)
