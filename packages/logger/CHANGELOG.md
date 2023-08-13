@@ -1,3 +1,15 @@
+# v11.0.26 (Sun Aug 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- debug message change ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.25 (Sun Aug 13 2023)
 
 #### ⚠️ Pushed to `main`

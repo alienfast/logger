@@ -1,3 +1,15 @@
+# v11.0.26 (Sun Aug 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- make sure debug messages show up in selenium ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.24 (Wed Aug 09 2023)
 
 #### ⚠️ Pushed to `main`

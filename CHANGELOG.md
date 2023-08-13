@@ -1,3 +1,18 @@
+# v11.0.26 (Sun Aug 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger-browser`
+  - make sure debug messages show up in selenium ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger`
+  - debug message change ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.25 (Sun Aug 13 2023)
 
 #### ⚠️ Pushed to `main`
