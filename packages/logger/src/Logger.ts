@@ -66,7 +66,7 @@ export class Logger {
     console.info('\tdefaultThreshold', this.defaultThreshold)
     console.info('\tDEBUG is', Level.DEBUG)
     console.info('\tINFO is', Level.INFO)
-    console.info('\tConfigurations:')
+    console.info('\tConfigured logs:')
     const sortedKeys = Object.keys(globalThis.logs).sort()
     for (const key of sortedKeys) {
       console.info(`\t\t${key}: ${Logger.get(key).options.threshold}`)
