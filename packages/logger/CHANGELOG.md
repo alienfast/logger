@@ -1,3 +1,17 @@
+# v11.0.25 (Sun Aug 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- cleanup LogConfig, rename to simply Options ([@rosskevin](https://github.com/rosskevin))
+- move some types to explicit to avoid eslint corner case ([@rosskevin](https://github.com/rosskevin))
+- move log configuration to globalThis to prevent multi-library inclusion conflict ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.24 (Wed Aug 09 2023)
 
 #### ⚠️ Pushed to `main`
