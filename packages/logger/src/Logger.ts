@@ -45,7 +45,7 @@ export class Logger {
       globalThis.logs[name] = log
       // console.log(`Log [${name}] set to ${threshold || this.defaultThreshold}`)
     } else if (overwrite) {
-      log.logConfig.threshold = threshold as Level
+      log.options.threshold = threshold as Level
       // console.log(
       //   `Log [${name}] (override) set to ${String(
       //     log.threshold,
@@ -69,7 +69,7 @@ export class Logger {
     console.info('\tConfigurations:')
     const sortedKeys = Object.keys(globalThis.logs).sort()
     for (const key of sortedKeys) {
-      console.info(`\t\t${key}: ${Logger.get(key).logConfig.threshold}`)
+      console.info(`\t\t${key}: ${Logger.get(key).options.threshold}`)
     }
   }
 }

@@ -4,8 +4,13 @@
 
 import { jsonify } from './jsonify'
 import { Level } from './Level'
-import { LogConfig } from './LogConfig'
 import { Logger } from './Logger'
+
+export interface Options {
+  name: string
+  threshold: Level
+  systemThreshold: Level
+}
 
 const NOLOG = typeof process !== 'undefined' && process.env.NOLOG
 
@@ -16,9 +21,9 @@ const NOLOG = typeof process !== 'undefined' && process.env.NOLOG
 // }
 
 export class Log {
-  public logConfig: LogConfig
-  constructor(logConfig: LogConfig) {
-    this.logConfig = logConfig
+  public options: Options
+  constructor(options: Options) {
+    this.options = options
   }
 
   public dump(o: object, force = false, truncate = -1) {
@@ -62,7 +67,7 @@ export class Log {
     // console.log('threshold', this.threshold)
     // console.log('level', level)
     // console.log('configuration.systemThreshold', configuration.systemThreshold)
-    return !NOLOG && level >= this.logConfig.threshold && level >= this.logConfig.systemThreshold
+    return !NOLOG && level >= this.options.threshold && level >= this.options.systemThreshold
   }
 
   public isDebugEnabled() {
@@ -85,8 +90,8 @@ export class Log {
     if (!this.isEnabled(threshold)) {
       return
     }
-    if (this.logConfig.name) {
-      console.group(`[${this.logConfig.name}] ${name}`)
+    if (this.options.name) {
+      console.group(`[${this.options.name}] ${name}`)
     } else {
       console.group(name)
     }
@@ -110,6 +115,6 @@ export class Log {
         'globalThis.logWriter was not set prior to attempt to write log.  Please use @alienfast/logger-browser or @alienfast/logger-node to initialize a writer at the entry point.',
       )
     }
-    globalThis.logWriter.write(this.logConfig.name, level, ...args)
+    globalThis.logWriter.write(this.options.name, level, ...args)
   }
 }

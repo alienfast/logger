@@ -13,6 +13,6 @@ type WithLog = (log: Log) => void
  * @param callback
  */
 export const withLog = (log: Log, threshold: Level, callback: WithLog) => {
-  const scopedLog = new Log({ ...log.logConfig, threshold })
+  const scopedLog = new Log({ ...log.options, threshold })
   callback(scopedLog)
 }
