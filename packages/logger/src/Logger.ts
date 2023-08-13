@@ -9,8 +9,6 @@ if (!globalThis.logs) {
 }
 
 export class Logger {
-  // public static logs: { [key: string]: Log } = {}
-
   /**
    * The default threshold for any new Log
    */
@@ -27,7 +25,7 @@ export class Logger {
    * @param threshold - string for threshold or true for 'debug'
    * @returns {Log}
    */
-  public static get(object: string | object, threshold?: LevelOrBoolean, overwrite = false) {
+  public static get(object: string | object, threshold?: LevelOrBoolean, overwrite = false): Log {
     const level: Level = toLevel(threshold)
 
     if (!object) {
@@ -35,26 +33,27 @@ export class Logger {
     }
     const name = objectName(object)
 
-    let logWriter = globalThis.logs[name]
-    if (!logWriter) {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    let log: Log | undefined = globalThis.logs[name]
+    if (!log) {
       // need to delay resolution of LogWriter, so pass this in.
-      logWriter = new Log({
+      log = new Log({
         name,
         systemThreshold: this.systemThreshold,
         threshold: toLevel(threshold, this.defaultThreshold),
       })
-      globalThis.logs[name] = logWriter
+      globalThis.logs[name] = log
       // console.log(`Log [${name}] set to ${threshold || this.defaultThreshold}`)
     } else if (overwrite) {
-      logWriter.logConfig.threshold = threshold as Level
+      log.logConfig.threshold = threshold as Level
       // console.log(
       //   `Log [${name}] (override) set to ${String(
-      //     logWriter.threshold,
-      //   )} debug? ${logWriter.isDebugEnabled()}`,
+      //     log.threshold,
+      //   )} debug? ${log.isDebugEnabled()}`,
       // )
     }
 
-    return logWriter
+    return log
   }
 
   public static dumpConfiguration() {
