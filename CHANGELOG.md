@@ -1,3 +1,16 @@
+# v11.0.27 (Mon Aug 14 2023)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger-browser`
+  - re-enable log.debug -> console.debug ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.26 (Sun Aug 13 2023)
 
 #### ⚠️ Pushed to `main`
