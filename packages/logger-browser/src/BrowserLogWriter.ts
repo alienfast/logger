@@ -74,8 +74,7 @@ export class BrowserLogWriter implements LogWriter {
 
       switch (level) {
         case Level.DEBUG:
-          // isDumbTerminal ? console.info(...msg) : console.debug(...msg)
-          console.info(...msg) // this must be info for selenium to capture
+          isDumbTerminal ? console.info(...msg) : console.debug(...msg) // note: logging prefs must be set in capybara to see these.
           break
         case Level.INFO:
           console.info(...msg)
