@@ -10,7 +10,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "run-s clean build:each release:finalize",
+    "build": "run-s clean build:each build:finalize",
     "build:ide": "echo 'tsc -b' && tsc -b",
     "build:each": "lerna exec --stream --parallel -- yarn build",
     "clean": "node ./scripts/clean.js",
@@ -19,7 +19,7 @@
     "lint:fix": "eslint . --cache --ext .js,.ts,.tsx --fix",
     "test": "lerna exec --stream --parallel -- yarn test",
     "release": "yarn auto shipit",
-    "release:finalize": "lerna exec --stream --parallel -- releaseFinalize"
+    "build:finalize": "lerna exec --stream --parallel -- buildFinalize"
   },
   "husky": {
     "hooks": {
