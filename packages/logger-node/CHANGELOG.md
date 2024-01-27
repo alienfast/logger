@@ -1,3 +1,16 @@
+# v11.0.28 (Sat Jan 27 2024)
+
+#### 🐛 Bug Fix
+
+- update yarn and all packages [#12](https://github.com/alienfast/logger/pull/12) ([@rosskevin](https://github.com/rosskevin))
+- update yarn and all packages ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.24 (Wed Aug 09 2023)
 
 #### ⚠️ Pushed to `main`

@@ -1,3 +1,16 @@
+# v11.0.28 (Sat Jan 27 2024)
+
+#### 🐛 Bug Fix
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - update yarn and all packages [#12](https://github.com/alienfast/logger/pull/12) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.27 (Mon Aug 14 2023)
 
 #### ⚠️ Pushed to `main`
