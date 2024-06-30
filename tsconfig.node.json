@@ -8,7 +8,7 @@
     "allowJs": true
   },
   "include": [
-    ".eslintrc.cjs",
+    "eslint.config.mjs",
     "vite*.ts",
     "./packages/*/vite*.ts",
     "tsup.config.ts",

@@ -4,11 +4,7 @@
     "**/.pnp.*": true
   },
   "eslint.nodePath": ".yarn/sdks",
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.useFlatConfig": true,
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "testing.automaticallyOpenPeekView": "never",
-  "vitest.commandLine": "yarn test --"
-  // "[typescript]": {
-  //   "editor.defaultFormatter": "vscode.typescript-language-features"
-  // }
+  "testing.automaticallyOpenPeekView": "never"
 }
