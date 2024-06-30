@@ -75,9 +75,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@alienfast/eslint-config@npm:^5.1.6":
-  version: 5.1.6
-  resolution: "@alienfast/eslint-config@npm:5.1.6::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Feslint-config%2F5.1.6%2F17c0bf0a18474b62bba7cfaa7eb275644399c27f"
+"@alienfast/eslint-config@npm:^5.1.7":
+  version: 5.1.7
+  resolution: "@alienfast/eslint-config@npm:5.1.7::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40alienfast%2Feslint-config%2F5.1.7%2F90345a54a95895dc08cf39dd1015abe63380e56e"
   dependencies:
     "@eslint-community/eslint-plugin-eslint-comments": "npm:^4.3.0"
     "@eslint/compat": "npm:^1.1.0"
@@ -102,7 +102,7 @@ __metadata:
   peerDependencies:
     eslint: "*"
     prettier: "*"
-  checksum: 10/a53167cb64e09897e8ece8db178e2d121bff3d46a7fb17586b5cdc8a92a9af88de54fcda7948a6cd3a672e3bf731f2898800770c924826f05f3b8d886f52004b
+  checksum: 10/b9263d005d6a25cf384403623448c108a0698429d249ab93683a67109a129da4417a55504240cf2f7976fd569fe18d9e7ee6a78f06a579714937a4f0e064fd83
   languageName: node
   linkType: hard
 
@@ -9220,7 +9220,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@alienfast/ci": "npm:^8.5.9"
-    "@alienfast/eslint-config": "npm:^5.1.6"
+    "@alienfast/eslint-config": "npm:^5.1.7"
     "@alienfast/logger": "workspace:*"
     "@alienfast/prettier-config": "npm:^1.0.0"
     "@alienfast/tsconfig": "npm:^1.0.1"
@@ -9246,6 +9246,7 @@ __metadata:
     prettier: "npm:^3.3.2"
     rimraf: "npm:^5.0.7"
     typescript: "npm:^5.5.2"
+    typescript-eslint: "npm:^7.14.1"
     vite: "npm:^5.3.2"
     vite-plugin-dts: "npm:^3.9.1"
     vite-tsconfig-paths: "npm:^4.3.2"
