@@ -7,6 +7,5 @@
     { "path": "packages/logger" },
     { "path": "packages/logger-browser" },
     { "path": "packages/logger-node" }
-    // { "path": "tsconfig.node.json" }
   ]
 }
