@@ -8,15 +8,14 @@
     "allowJs": true
   },
   "include": [
-    "eslint.config.mjs",
-    "vite*.ts",
-    "./packages/*/vite*.ts",
-    "tsup.config.ts",
-    "./typings/**/*",
-    "./packages/*/tsup.*.ts",
-    "scripts/*.js",
-    ".storybook/*.ts*",
-    ".storybook/preview.tsx",
-    "./packages/*/src"
+    // ".ncurc.cjs",
+    // "eslint.config.mjs",
+    // "**/vite*.ts",
+    // "**/tsup.*.ts",
+    // "typings/**/*",
+    // "scripts/*.js",
+    // ".storybook/*.ts*",
+    // ".storybook/preview.tsx",
+    // "packages/*/src"
   ]
 }

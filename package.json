@@ -17,7 +17,7 @@
     "clean": "node ./scripts/clean.js",
     "clean:yarn": "node ./scripts/clean-yarn.js",
     "reset": "node ./scripts/reset.js",
-    "lint:fix": "eslint . --cache --ext .js,.ts,.tsx --fix",
+    "lint:fix": "eslint . --cache --fix",
     "test": "lerna exec --stream --parallel -- yarn test",
     "release": "yarn auto shipit",
     "build:finalize": "lerna exec --stream --parallel -- buildFinalize"
@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@alienfast/ci": "^8.5.9",
-    "@alienfast/eslint-config": "^5.1.6",
+    "@alienfast/eslint-config": "^5.1.9",
     "@alienfast/logger": "workspace:*",
     "@alienfast/prettier-config": "^1.0.0",
     "@alienfast/tsconfig": "^1.0.1",
@@ -64,8 +64,9 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^3.3.2",
     "rimraf": "^5.0.7",
-    "typescript": "^5.5.2",
-    "vite": "^5.3.2",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0",
+    "vite": "^5.3.3",
     "vite-plugin-dts": "^3.9.1",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^1.6.0"
