@@ -1,3 +1,16 @@
+# v11.0.29 (Thu Jul 04 2024)
+
+#### 🐛 Bug Fix
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - Update dependencies, eslint 9 [#13](https://github.com/alienfast/logger/pull/13) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.28 (Sat Jan 27 2024)
 
 #### 🐛 Bug Fix
