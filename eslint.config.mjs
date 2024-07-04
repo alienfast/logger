@@ -9,18 +9,4 @@ import tseslint from 'typescript-eslint'
 export default tseslint.config({
   name: 'project',
   extends: [...af.configs.recommended],
-  // languageOptions: {
-  //   parserOptions: {
-  //     // project: true, // find the closest tsconfig file. ['./tsconfig*.json', './packages/*/tsconfig.json'],
-  //     // project: [
-  //     //   //
-  //     //   './tsconfig*.json',
-  //     //   './packages/*/tsconfig.json',
-  //     // ],
-
-  //     warnOnUnsupportedTypeScriptVersion: true,
-  //     EXPERIMENTAL_useProjectService: true,
-  //     // tsconfigRootDir: import.meta.dirname,
-  //   },
-  // },
 })
