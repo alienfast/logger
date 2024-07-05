@@ -3,7 +3,6 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "eslint.nodePath": ".yarn/sdks",
   "eslint.useFlatConfig": true,
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "testing.automaticallyOpenPeekView": "never"
