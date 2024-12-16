@@ -19,10 +19,10 @@
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },
   "devDependencies": {
-    "@alienfast/logger": "^11.0.29",
+    "@alienfast/logger": "workspace:*",
     "clean-package": "^2.2.0",
-    "vite": "^5.3.3",
-    "vitest": "^1.6.0"
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
   },
   "peerDependencies": {
     "@alienfast/logger": "*"
