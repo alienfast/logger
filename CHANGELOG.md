@@ -1,3 +1,16 @@
+# v11.0.30 (Mon Dec 16 2024)
+
+#### 🐛 Bug Fix
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - update [#14](https://github.com/alienfast/logger/pull/14) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.29 (Thu Jul 04 2024)
 
 #### 🐛 Bug Fix
