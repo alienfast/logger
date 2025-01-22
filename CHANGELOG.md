@@ -1,3 +1,16 @@
+# v11.0.32 (Wed Jan 22 2025)
+
+#### 🐛 Bug Fix
+
+- `@alienfast/logger-node`
+  - Fix monorepo npm release, bring in incompatible nodenext timestamp fn [#16](https://github.com/alienfast/logger/pull/16) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.31 (Wed Jan 22 2025)
 
 #### 🐛 Bug Fix
