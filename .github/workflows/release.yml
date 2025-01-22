@@ -34,5 +34,10 @@ jobs:
 
       # cannot run this on branches because it doesn't keep the canary version from auto shipit, can only secondarily publish to npm for main branch
       - name: Publish secondarily to npm
-        run: lerna exec --stream --parallel -- npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
+        # waiting on bug/related pr/auto release https://github.com/intuit/auto/issues/2488
+        # run: lerna exec --stream --parallel -- npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
+        run: >
+          cd packages/logger && npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
+          && cd ../logger-browser && npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
+          && cd ../logger-node && npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
         if: github.ref == 'refs/heads/main'
