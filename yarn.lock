@@ -115,7 +115,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-browser@workspace:packages/logger-browser"
   dependencies:
-    "@alienfast/logger": "npm:^11.0.30"
+    "@alienfast/logger": "npm:^11.0.31"
     clean-package: "npm:^2.2.0"
     vite: "npm:^6.0.11"
     vitest: "npm:^3.0.3"
@@ -128,10 +128,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-node@workspace:packages/logger-node"
   dependencies:
-    "@alienfast/logger": "npm:^11.0.30"
+    "@alienfast/logger": "npm:^11.0.31"
     chalk: "npm:^5.4.1"
     clean-package: "npm:^2.2.0"
-    time-stamp: "npm:^2.2.0"
     vite: "npm:^6.0.11"
     vitest: "npm:^3.0.3"
   peerDependencies:
@@ -139,7 +138,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@alienfast/logger@npm:^11.0.30, @alienfast/logger@workspace:*, @alienfast/logger@workspace:packages/logger":
+"@alienfast/logger@npm:^11.0.31, @alienfast/logger@workspace:*, @alienfast/logger@workspace:packages/logger":
   version: 0.0.0-use.local
   resolution: "@alienfast/logger@workspace:packages/logger"
   dependencies:
@@ -9786,13 +9785,6 @@ __metadata:
   version: 2.3.8
   resolution: "through@npm:2.3.8"
   checksum: 10/5da78346f70139a7d213b65a0106f3c398d6bc5301f9248b5275f420abc2c4b1e77c2abc72d218dedc28c41efb2e7c312cb76a7730d04f9c2d37d247da3f4198
-  languageName: node
-  linkType: hard
-
-"time-stamp@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "time-stamp@npm:2.2.0"
-  checksum: 10/b602ea7c86793989fb22cf5aec35307e78af3e3c4f9ef7efdf0dabe296def23684985a55fb56a37143d80256f07f17768916d80995cd197aa3a811470d2e6f54
   languageName: node
   linkType: hard
 
