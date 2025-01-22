@@ -1,4 +1,4 @@
-import { LoggersConfig } from './configureLoggers'
+import { LoggersConfig } from './configureLoggers.js'
 
 export const debugs = (classes: string[]): LoggersConfig => {
   const loggers: LoggersConfig = {}

@@ -4,9 +4,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
-import { jsonify } from './jsonify'
-import { Level } from './Level'
-import { Logger } from './Logger'
+import { jsonify } from './jsonify.js'
+import { Level } from './Level.js'
+import { Logger } from './Logger.js'
 
 export interface Options {
   name: string

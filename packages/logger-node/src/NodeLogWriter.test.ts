@@ -1,7 +1,7 @@
 import { Logger } from '@alienfast/logger'
 import { describe, expect, test } from 'vitest'
 
-import { initializeNodeLogger } from './initializeNodeLogger'
+import { initializeNodeLogger } from './initializeNodeLogger.js'
 
 describe('NodeLogWriter', () => {
   test.concurrent('initializeNodeLogger', () => {

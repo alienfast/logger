@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { isNode } from './isNode'
+import { isNode } from './isNode.js'
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore

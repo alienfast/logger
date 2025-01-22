@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 
-import { Browser } from './Browser'
+import { Browser } from './Browser.js'
 
 describe('browser', () => {
   test.concurrent('isHeadlessChrome', () => {

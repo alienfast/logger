@@ -1,4 +1,4 @@
-import { Level } from './Level'
+import { Level } from './Level.js'
 
 export type LevelString = 'debug' | 'info' | 'warn' | 'error'
 export type LevelOrBoolean = LevelString | Level | boolean

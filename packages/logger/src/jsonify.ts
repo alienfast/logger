@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-import { objectName } from './objects'
+import { objectName } from './objects.js'
 
 function jsonSimplify(v: any, except: string[] = []) {
   const result: any = {}

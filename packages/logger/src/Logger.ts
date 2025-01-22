@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
-import { Level } from './Level'
-import { Log } from './Log'
-import { objectName } from './objects'
-import { LevelOrBoolean, toLevel } from './toLevel'
+import { Level } from './Level.js'
+import { Log } from './Log.js'
+import { objectName } from './objects.js'
+import { LevelOrBoolean, toLevel } from './toLevel.js'
 
 if (!globalThis.logs) {
   globalThis.logs = {}

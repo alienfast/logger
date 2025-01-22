@@ -1,6 +1,6 @@
-import { Level } from './Level'
-import { Logger } from './Logger'
-import { LevelString, toLevel } from './toLevel'
+import { Level } from './Level.js'
+import { Logger } from './Logger.js'
+import { LevelString, toLevel } from './toLevel.js'
 
 export interface LoggersConfig {
   [key: string | symbol]: LevelString | Level

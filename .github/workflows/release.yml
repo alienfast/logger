@@ -15,15 +15,15 @@ jobs:
       - name: Prepare repository
         run: git fetch --unshallow --tags
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: '>=18.12.0'
+          node-version: 'latest'
           cache: 'yarn'
 
       # allow the lock file to change (updating our own workspace versions in monorepo)
       - run: yarn install --no-immutable
-      - run: yarn build
       - run: yarn test
+      - run: yarn build
 
       # commit back the lock file change if it works
       - uses: stefanzweifel/git-auto-commit-action@v4
@@ -31,3 +31,8 @@ jobs:
           commit_message: Apply yarn.lock changes
 
       - run: yarn release
+
+      # cannot run this on branches because it doesn't keep the canary version from auto shipit, can only secondarily publish to npm for main branch
+      - name: Publish secondarily to npm
+        run: npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
+        if: github.ref == 'refs/heads/main'
