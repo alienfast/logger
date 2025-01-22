@@ -1,3 +1,16 @@
+# v11.0.31 (Wed Jan 22 2025)
+
+#### 🐛 Bug Fix
+
+- ncu and yarn update, switch to nodenext and add extensions [#15](https://github.com/alienfast/logger/pull/15) ([@rosskevin](https://github.com/rosskevin))
+- ncu and yarn update, switch to nodenext and add extensions ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.30 (Mon Dec 16 2024)
 
 #### 🐛 Bug Fix
