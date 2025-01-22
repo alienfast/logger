@@ -18,7 +18,7 @@
     "clean:yarn": "node ./scripts/clean-yarn.js",
     "reset": "node ./scripts/reset.js",
     "lint:fix": "eslint . --cache --fix",
-    "test": "lerna exec --stream --parallel -- yarn test",
+    "test": "yarn build:ide && lerna exec --stream --parallel -- yarn test",
     "release": "yarn auto shipit",
     "build:finalize": "lerna exec --stream --parallel -- buildFinalize"
   },

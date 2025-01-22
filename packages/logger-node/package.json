@@ -19,8 +19,7 @@
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },
   "dependencies": {
-    "chalk": "^5.4.1",
-    "time-stamp": "^2.2.0"
+    "chalk": "^5.4.1"
   },
   "devDependencies": {
     "@alienfast/logger": "^11.0.31",

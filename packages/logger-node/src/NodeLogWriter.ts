@@ -4,7 +4,8 @@
 /* eslint-disable no-console */
 import { Level, LogWriter } from '@alienfast/logger'
 import chalk, { ChalkInstance } from 'chalk'
-import timestamp from 'time-stamp'
+
+import { timestamp } from './timestamp.js'
 
 // chalk.enabled = true
 
