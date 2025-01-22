@@ -18,7 +18,7 @@ const timespan = {
 
 type timespanKeys = keyof typeof timespan
 
-export const timestamp = function (format: string, utc?: boolean, date?: Date) {
+export const timestamp = function (format: string, utc: boolean = false, date?: Date) {
   // if (typeof format !== 'string') {
   //   date = format
   //   format = 'YYYY-MM-DD'
