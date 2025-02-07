@@ -1,5 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@alienfast/tsconfig/nodenext.json", // for scripts and configs
   "display": "...",
   "files": [],
   "compilerOptions": { "composite": true },
