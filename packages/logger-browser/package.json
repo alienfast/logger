@@ -21,8 +21,8 @@
   "devDependencies": {
     "@alienfast/logger": "^11.0.32",
     "clean-package": "^2.2.0",
-    "vite": "^6.0.11",
-    "vitest": "^3.0.3"
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5"
   },
   "peerDependencies": {
     "@alienfast/logger": "*"

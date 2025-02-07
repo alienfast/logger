@@ -20,14 +20,13 @@
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },
   "dependencies": {
-    "@types/node": "^22.10.7"
+    "@types/node": "^22.13.1"
   },
   "devDependencies": {
-    "@alienfast/ci": "^8.5.11",
     "@alienfast/logger-node": "workspace:*",
     "clean-package": "^2.2.0",
-    "vite": "^6.0.11",
-    "vitest": "^3.0.3"
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
