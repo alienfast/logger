@@ -1,3 +1,16 @@
+# v11.0.33 (Fri Feb 07 2025)
+
+#### 🐛 Bug Fix
+
+- ncu, remove private org requirement, scripts to ts [#17](https://github.com/alienfast/logger/pull/17) ([@rosskevin](https://github.com/rosskevin))
+- ncu, remove private org requirement, scripts to ts ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.31 (Wed Jan 22 2025)
 
 #### 🐛 Bug Fix

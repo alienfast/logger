@@ -1,3 +1,22 @@
+# v11.0.33 (Fri Feb 07 2025)
+
+#### 🐛 Bug Fix
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - ncu, remove private org requirement, scripts to ts [#17](https://github.com/alienfast/logger/pull/17) ([@rosskevin](https://github.com/rosskevin))
+
+#### ⚠️ Pushed to `main`
+
+- workaround for https://github.com/intuit/auto/issues/2488 ([@rosskevin](https://github.com/rosskevin))
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+- remove deprecated useWorkspaces ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.32 (Wed Jan 22 2025)
 
 #### 🐛 Bug Fix
