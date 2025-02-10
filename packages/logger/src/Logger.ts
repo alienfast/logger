@@ -4,6 +4,25 @@ import { Log } from './Log.js'
 import { objectName } from './objects.js'
 import { LevelOrBoolean, toLevel } from './toLevel.js'
 
+export interface LoggerConfig {
+  /**
+   * The default threshold for any new Log
+   */
+  defaultThreshold: Level
+
+  /**
+   * The minimum threshold for the system
+   */
+  systemThreshold: Level
+}
+
+if (!globalThis.loggerConfig) {
+  globalThis.loggerConfig = {
+    defaultThreshold: Level.INFO,
+    systemThreshold: Level.DEBUG,
+  }
+}
+
 if (!globalThis.logs) {
   globalThis.logs = {}
 }
@@ -12,12 +31,24 @@ export class Logger {
   /**
    * The default threshold for any new Log
    */
-  public static defaultThreshold: Level = Level.INFO
+  public static setDefaultThreshold(level: Level) {
+    globalThis.loggerConfig.defaultThreshold = level
+  }
+
+  public static getDefaultThreshold() {
+    return globalThis.loggerConfig.defaultThreshold
+  }
 
   /**
    * The minimum threshold for the system
    */
-  public static systemThreshold: Level = Level.DEBUG
+  public static setSystemThreshold(level: Level) {
+    globalThis.loggerConfig.systemThreshold = level
+  }
+
+  public static getSystemThreshold() {
+    return globalThis.loggerConfig.systemThreshold
+  }
 
   /**
    * Resolve a logger
@@ -33,14 +64,13 @@ export class Logger {
     }
     const name = objectName(object)
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     let log: Log | undefined = globalThis.logs[name]
     if (!log) {
       // need to delay resolution of LogWriter, so pass this in.
       log = new Log({
         name,
-        systemThreshold: this.systemThreshold,
-        threshold: toLevel(threshold, this.defaultThreshold),
+        systemThreshold: this.getSystemThreshold(),
+        threshold: toLevel(threshold, this.getDefaultThreshold()),
       })
       globalThis.logs[name] = log
       // console.log(`Log [${name}] set to ${threshold || this.defaultThreshold}`)
@@ -62,8 +92,8 @@ export class Logger {
     console.info('\tglobalThis.logWriter', globalThis.logWriter)
     // console.info('\tFORCE_LOG_WRITER', process && process.env && process.env.FORCE_LOG_WRITER)
     console.info('\tlocation', import.meta.url)
-    console.info('\tsystemThreshold', this.systemThreshold)
-    console.info('\tdefaultThreshold', this.defaultThreshold)
+    console.info('\tsystemThreshold', this.getSystemThreshold())
+    console.info('\tdefaultThreshold', this.getDefaultThreshold)
     console.info('\tDEBUG is', Level.DEBUG)
     console.info('\tINFO is', Level.INFO)
     console.info('\tConfigured logs:')

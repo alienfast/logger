@@ -1,4 +1,4 @@
-import { LogWriter } from './LogWriter'
+import { Log, LogWriter, LoggerConfig } from '@alienfast/logger'
 
 // Augment the globalThis interface
 // @see https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-8.html#example-6
@@ -12,4 +12,5 @@ declare global {
   // eslint-disable-next-line no-var
   var logWriter: LogWriter
   var logs: Record<string, Log>
+  var loggerConfig: LoggerConfig
 }
