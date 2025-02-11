@@ -1,3 +1,17 @@
+# v12.0.1 (Tue Feb 11 2025)
+
+#### ⚠️ Pushed to `main`
+
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - fix diagnostics logging function instead of value ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.0.0 (Tue Feb 11 2025)
 
 #### 💥 Breaking Change
