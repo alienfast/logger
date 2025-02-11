@@ -1,3 +1,19 @@
+# v12.0.0 (Tue Feb 11 2025)
+
+#### 💥 Breaking Change
+
+- fix build cycle error, move system configs to globalThis [#18](https://github.com/alienfast/logger/pull/18) ([@rosskevin](https://github.com/rosskevin))
+
+#### 🐛 Bug Fix
+
+- fix build cycle error, move global system default configs to globalThis to prevent chunk mismatches ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v11.0.33 (Fri Feb 07 2025)
 
 #### 🐛 Bug Fix
