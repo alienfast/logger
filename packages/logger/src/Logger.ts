@@ -93,7 +93,7 @@ export class Logger {
     // console.info('\tFORCE_LOG_WRITER', process && process.env && process.env.FORCE_LOG_WRITER)
     console.info('\tlocation', import.meta.url)
     console.info('\tsystemThreshold', this.getSystemThreshold())
-    console.info('\tdefaultThreshold', this.getDefaultThreshold)
+    console.info('\tdefaultThreshold', this.getDefaultThreshold())
     console.info('\tDEBUG is', Level.DEBUG)
     console.info('\tINFO is', Level.INFO)
     console.info('\tConfigured logs:')
