@@ -13,7 +13,7 @@ export function configureLoggers(loggers: LoggersConfig) {
     const threshold = loggers[component]
     Logger.get(
       component as string,
-      toLevel(threshold as LevelString | Level, Logger.defaultThreshold),
+      toLevel(threshold as LevelString | Level, Logger.getDefaultThreshold()),
       true,
     )
   }
