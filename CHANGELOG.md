@@ -1,3 +1,16 @@
+# v12.0.2 (Fri Mar 07 2025)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - ncu ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.0.1 (Tue Feb 11 2025)
 
 #### ⚠️ Pushed to `main`
