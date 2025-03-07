@@ -1,6 +1,6 @@
 {
   "name": "@alienfast/logger",
-  "version": "12.0.2",
+  "version": "12.0.3",
   "type": "module",
   "main-types-note": "This is to appease tsc, types will be removed by clean-package. see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build#workaround ",
   "main": "./dist/index.js",
