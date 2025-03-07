@@ -37,7 +37,7 @@
     ]
   },
   "devDependencies": {
-    "@alienfast/eslint-config": "^5.2.6",
+    "@alienfast/eslint-config": "^5.2.7",
     "@alienfast/logger": "workspace:*",
     "@alienfast/prettier-config": "^1.0.2",
     "@alienfast/tsconfig": "^1.0.4",
@@ -69,6 +69,12 @@
     "vite-plugin-dts": "^4.5.3",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.8"
+  },
+  "resolutions": {
+    "eslint-plugin-n": "17.5.1"
+  },
+  "resolutions-issues": {
+    "eslint-plugin-n": "https://github.com/eslint-community/eslint-plugin-n/issues/413"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
