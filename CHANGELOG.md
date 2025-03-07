@@ -1,3 +1,15 @@
+# v12.0.3 (Fri Mar 07 2025)
+
+#### ⚠️ Pushed to `main`
+
+- temporary resolutions to workaround eslint-plugin-n issue ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.0.2 (Fri Mar 07 2025)
 
 #### ⚠️ Pushed to `main`
