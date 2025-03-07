@@ -1,4 +1,4 @@
-import path from 'node:path'
+import { dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { $ } from 'execa'
@@ -9,7 +9,7 @@ const $$ = $({ stdio: 'inherit' })
 
 console.log('Resetting...')
 
-const dir = path.dirname(fileURLToPath(import.meta.url))
+const dir = dirname(fileURLToPath(import.meta.url))
 
 await Promise.all([$$`tsx ${dir}/clean.ts`, $$`tsx ${dir}/clean-yarn.ts`])
 
