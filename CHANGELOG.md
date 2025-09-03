@@ -1,3 +1,17 @@
+# v12.0.5 (Wed Sep 03 2025)
+
+#### ⚠️ Pushed to `main`
+
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - don’t ship tsconfigs as it errors in ide downstream ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.0.4 (Tue Sep 02 2025)
 
 #### ⚠️ Pushed to `main`
