@@ -39,7 +39,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-browser@workspace:packages/logger-browser"
   dependencies:
-    "@alienfast/logger": "npm:^12.0.3"
+    "@alienfast/logger": "npm:^12.0.4"
     clean-package: "npm:^2.2.0"
     vite: "npm:^7.1.4"
     vitest: "npm:^3.2.4"
@@ -52,7 +52,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alienfast/logger-node@workspace:packages/logger-node"
   dependencies:
-    "@alienfast/logger": "npm:^12.0.3"
+    "@alienfast/logger": "npm:^12.0.4"
     chalk: "npm:^5.6.0"
     clean-package: "npm:^2.2.0"
     vite: "npm:^7.1.4"
@@ -62,7 +62,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@alienfast/logger@npm:^12.0.3, @alienfast/logger@workspace:*, @alienfast/logger@workspace:packages/logger":
+"@alienfast/logger@npm:^12.0.4, @alienfast/logger@workspace:*, @alienfast/logger@workspace:packages/logger":
   version: 0.0.0-use.local
   resolution: "@alienfast/logger@workspace:packages/logger"
   dependencies:
