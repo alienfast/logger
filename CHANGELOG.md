@@ -1,3 +1,17 @@
+# v12.0.6 (Wed Sep 03 2025)
+
+#### ⚠️ Pushed to `main`
+
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - add build:prep for license and npmignore ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.0.5 (Wed Sep 03 2025)
 
 #### ⚠️ Pushed to `main`
