@@ -11,8 +11,9 @@
   },
   "type": "module",
   "scripts": {
-    "build": "run-s clean build:each",
+    "build": "run-s clean build:prep build:each",
     "build:ide": "echo 'tsc -b' && tsc -b",
+    "build:prep": "lerna exec --stream -- cp ../../.npmignore . && lerna exec --stream -- cp ../../LICENSE .",
     "build:each": "lerna exec --stream -- yarn build",
     "clean": "tsx ./scripts/clean.ts",
     "clean:yarn": "tsx ./scripts/clean-yarn.ts",
