@@ -63,6 +63,35 @@ export class Log {
     }
   }
 
+  // Lazy evaluation variants - these accept functions that will only be called if logging is enabled
+  public debugLazy(...argsFn: Array<() => any>): void {
+    if (this.isDebugEnabled()) {
+      const args = argsFn.map((fn) => fn())
+      this.writeLog(Level.DEBUG, ...args)
+    }
+  }
+
+  public infoLazy(...argsFn: Array<() => any>): void {
+    if (this.isInfoEnabled()) {
+      const args = argsFn.map((fn) => fn())
+      this.writeLog(Level.INFO, ...args)
+    }
+  }
+
+  public warnLazy(...argsFn: Array<() => any>): void {
+    if (this.isWarnEnabled()) {
+      const args = argsFn.map((fn) => fn())
+      this.writeLog(Level.WARN, ...args)
+    }
+  }
+
+  public errorLazy(...argsFn: Array<() => any>): void {
+    if (this.isErrorEnabled()) {
+      const args = argsFn.map((fn) => fn())
+      this.writeLog(Level.ERROR, ...args)
+    }
+  }
+
   public isEnabled(level: number): boolean {
     // console.log('threshold', this.threshold)
     // console.log('level', level)
