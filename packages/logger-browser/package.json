@@ -1,6 +1,6 @@
 {
   "name": "@alienfast/logger-browser",
-  "version": "12.0.6",
+  "version": "12.0.7",
   "type": "module",
   "main-types-note": "This is to appease tsc, types will be removed by clean-package. see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build#workaround ",
   "main": "./dist/index.js",
@@ -19,7 +19,7 @@
     "postpack": "clean-package restore -c ../../.clean-package.json"
   },
   "devDependencies": {
-    "@alienfast/logger": "^12.0.6",
+    "@alienfast/logger": "^12.0.7",
     "clean-package": "^2.2.0",
     "vite": "^7.1.5",
     "vitest": "^3.2.4"
