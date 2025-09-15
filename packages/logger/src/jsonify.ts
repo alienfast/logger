@@ -58,17 +58,17 @@ function simplifyDom(d?: SimplifiedDom) {
  * @param o
  */
 export function jsonify(o: object): string {
-  const seen: object[] = []
+  const seen = new Set<object>()
   return JSON.stringify(o, (k, v) => {
     if (!v) {
       return v
     }
 
     if (v instanceof Error) {
-      seen.push(v)
+      seen.add(v)
       return jsonSimplify(v)
     } else if (typeof v === 'function') {
-      seen.push(v)
+      seen.add(v)
       return '()'
     } else if (typeof v === 'object') {
       const name = objectName(v)
@@ -83,10 +83,10 @@ export function jsonify(o: object): string {
         const { children, ...rest } = v
         return { ...rest, children: '{...}' }
       } else {
-        if (seen.includes(v)) {
+        if (seen.has(v)) {
           return `__[${name}]__`
         }
-        seen.push(v)
+        seen.add(v)
       }
     }
     return v

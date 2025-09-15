@@ -41,54 +41,25 @@ export class Log {
   // https://github.com/facebook/flow/issues/2138#issuecomment-235405380
   public debug(...args: any[]) {
     if (this.isDebugEnabled()) {
-      this.writeLog(Level.DEBUG, ...args)
+      this.writeLogOptimized(Level.DEBUG, args)
     }
   }
 
   public info(...args: any[]) {
     if (this.isInfoEnabled()) {
-      this.writeLog(Level.INFO, ...args)
+      this.writeLogOptimized(Level.INFO, args)
     }
   }
 
   public warn(...args: any[]) {
     if (this.isWarnEnabled()) {
-      this.writeLog(Level.WARN, ...args)
+      this.writeLogOptimized(Level.WARN, args)
     }
   }
 
   public error(...args: any[]) {
     if (this.isErrorEnabled()) {
-      this.writeLog(Level.ERROR, ...args)
-    }
-  }
-
-  // Lazy evaluation variants - these accept functions that will only be called if logging is enabled
-  public debugLazy(...argsFn: Array<() => any>): void {
-    if (this.isDebugEnabled()) {
-      const args = argsFn.map((fn) => fn())
-      this.writeLog(Level.DEBUG, ...args)
-    }
-  }
-
-  public infoLazy(...argsFn: Array<() => any>): void {
-    if (this.isInfoEnabled()) {
-      const args = argsFn.map((fn) => fn())
-      this.writeLog(Level.INFO, ...args)
-    }
-  }
-
-  public warnLazy(...argsFn: Array<() => any>): void {
-    if (this.isWarnEnabled()) {
-      const args = argsFn.map((fn) => fn())
-      this.writeLog(Level.WARN, ...args)
-    }
-  }
-
-  public errorLazy(...argsFn: Array<() => any>): void {
-    if (this.isErrorEnabled()) {
-      const args = argsFn.map((fn) => fn())
-      this.writeLog(Level.ERROR, ...args)
+      this.writeLogOptimized(Level.ERROR, args)
     }
   }
 
@@ -144,6 +115,24 @@ export class Log {
         'globalThis.logWriter was not set prior to attempt to write log.  Please use @alienfast/logger-browser or @alienfast/logger-node to initialize a writer at the entry point.',
       )
     }
+    globalThis.logWriter.write(this.options.name, level, ...args)
+  }
+
+  private writeLogOptimized(level: Level, args: any[]) {
+    if (!globalThis.logWriter) {
+      // if in fact we are building our own logger repo, we need to force this setting because elsewhere we rely on peer dependency
+      // if (process && process.env && process.env.FORCE_LOG_WRITER === 'node') {
+      //   console.warn('Forcing globalThis.logWriter to SelfBuildLogWriter')
+      //   globalThis.logWriter = new SelfBuildLogWriter()
+      //   return
+      // }
+
+      Logger.dumpConfiguration()
+      throw new Error(
+        'globalThis.logWriter was not set prior to attempt to write log.  Please use @alienfast/logger-browser or @alienfast/logger-node to initialize a writer at the entry point.',
+      )
+    }
+    // Spread the args array only when we actually need to write the log
     globalThis.logWriter.write(this.options.name, level, ...args)
   }
 }
