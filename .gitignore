@@ -20,3 +20,4 @@ tsconfig.tsbuildinfo
 # releaseFinalize
 packages/*/LICENSE
 packages/*/.npmignore
+dist/

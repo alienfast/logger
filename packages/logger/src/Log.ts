@@ -41,25 +41,25 @@ export class Log {
   // https://github.com/facebook/flow/issues/2138#issuecomment-235405380
   public debug(...args: any[]) {
     if (this.isDebugEnabled()) {
-      this.writeLog(Level.DEBUG, ...args)
+      this.writeLog(Level.DEBUG, args)
     }
   }
 
   public info(...args: any[]) {
     if (this.isInfoEnabled()) {
-      this.writeLog(Level.INFO, ...args)
+      this.writeLog(Level.INFO, args)
     }
   }
 
   public warn(...args: any[]) {
     if (this.isWarnEnabled()) {
-      this.writeLog(Level.WARN, ...args)
+      this.writeLog(Level.WARN, args)
     }
   }
 
   public error(...args: any[]) {
     if (this.isErrorEnabled()) {
-      this.writeLog(Level.ERROR, ...args)
+      this.writeLog(Level.ERROR, args)
     }
   }
 
@@ -101,7 +101,7 @@ export class Log {
     console.groupEnd()
   }
 
-  private writeLog(level: Level, ...args: any[]) {
+  private writeLog(level: Level, args: any[]) {
     if (!globalThis.logWriter) {
       // if in fact we are building our own logger repo, we need to force this setting because elsewhere we rely on peer dependency
       // if (process && process.env && process.env.FORCE_LOG_WRITER === 'node') {
@@ -115,6 +115,7 @@ export class Log {
         'globalThis.logWriter was not set prior to attempt to write log.  Please use @alienfast/logger-browser or @alienfast/logger-node to initialize a writer at the entry point.',
       )
     }
+    // Spread the args array only when we actually need to write the log
     globalThis.logWriter.write(this.options.name, level, ...args)
   }
 }
