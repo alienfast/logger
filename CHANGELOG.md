@@ -1,3 +1,20 @@
+# v12.0.7 (Mon Sep 15 2025)
+
+#### 🐛 Bug Fix
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - feat: update dependencies with critical security fixes [#19](https://github.com/alienfast/logger/pull/19) ([@rosskevin](https://github.com/rosskevin))
+
+#### ⚠️ Pushed to `main`
+
+- updated workflow ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.0.6 (Wed Sep 03 2025)
 
 #### ⚠️ Pushed to `main`
