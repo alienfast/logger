@@ -1,3 +1,20 @@
+# v12.1.0 (Mon Sep 15 2025)
+
+#### 🚀 Enhancement
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - perf: optimize logging performance without API changes [#20](https://github.com/alienfast/logger/pull/20) ([@rosskevin](https://github.com/rosskevin))
+
+#### ⚠️ Pushed to `main`
+
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.0.7 (Mon Sep 15 2025)
 
 #### 🐛 Bug Fix
