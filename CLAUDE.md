@@ -15,7 +15,7 @@ This is a TypeScript monorepo for AlienFast logger packages, managed with Lerna 
 ### Development
 
 - `yarn build` - Build all packages (clean → prep → individual builds)
-- `yarn build:ide` - TypeScript compilation only (`tsc -b`)
+- `yarn typecheck` - TypeScript compilation only (`tsc -b`)
 - `yarn test` - Run all tests across packages (builds first, then runs in parallel)
 - `yarn lint:fix` - Run ESLint with auto-fix
 
@@ -70,7 +70,7 @@ All packages support these commands (run from package directory or with `lerna e
 ## Development Workflow
 
 1. Make changes in relevant package(s) under `packages/`
-2. Run `yarn build:ide` for quick type checking
+2. Run `yarn typecheck` for quick type checking
 3. Run `yarn test` to ensure all tests pass
 4. Use `yarn lint:fix` to format code
 5. Commit follows conventional commit format for auto-releases
