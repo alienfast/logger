@@ -1,4 +1,4 @@
-import { configureLoggers, LoggersConfig } from '@alienfast/logger'
+import { configureLoggers, type LoggersConfig } from '@alienfast/logger'
 
 import { BrowserLogWriter } from './BrowserLogWriter.js'
 

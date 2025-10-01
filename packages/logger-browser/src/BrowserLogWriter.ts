@@ -4,11 +4,11 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable no-console */
-import { browser, isNode, jsonify, Level, LogWriter } from '@alienfast/logger'
+import { browser, isNode, jsonify, Level, type LogWriter } from '@alienfast/logger'
 
 // console-log-colors could be a good alternative here that implements chalk api on the browser
 
-const DEBUG = false
+const _DEBUG = false
 const LevelStyle = {
   [Level.DEBUG]: {
     label: 'debug', // #303da5
@@ -56,7 +56,7 @@ export class BrowserLogWriter implements LogWriter {
       const style = LevelStyle[level]
 
       // webkit doesn't stringify all args, so do that so we can see in the log, otherwise use the more powerful one below
-      let msg
+      let msg: unknown[]
       if (isDumbTerminal) {
         const jsonifiedArgs = args.map((value) => {
           if (typeof value === 'object') {

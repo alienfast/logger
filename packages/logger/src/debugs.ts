@@ -1,4 +1,4 @@
-import { LoggersConfig } from './configureLoggers.js'
+import type { LoggersConfig } from './configureLoggers.js'
 import { Level } from './Level.js'
 
 export const debugs = (classes: string[]): LoggersConfig => {

@@ -1,37 +1,49 @@
 {
-  "name": "@alienfast/logger-node",
-  "version": "12.1.0",
-  "type": "module",
-  "main-types-note": "This is to appease tsc, types will be removed by clean-package. see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build#workaround ",
-  "main": "./dist/index.js",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
-  "sideEffects": false,
-  "license": "UNLICENSED",
-  "scripts": {
-    "test": "vitest",
-    "build": "vite build -c ../../vite.config.lib.ts",
-    "prepack": "clean-package -c ../../.clean-package.json",
-    "postpack": "clean-package restore -c ../../.clean-package.json"
-  },
   "dependencies": {
     "chalk": "^5.6.2"
   },
   "devDependencies": {
     "@alienfast/logger": "^12.1.0",
     "clean-package": "^2.2.0",
-    "vite": "^7.1.5",
+    "tsdown": "^0.15.6",
     "vitest": "^3.2.4"
   },
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./*",
+    "./initializeNodeLogger": "./src/initializeNodeLogger.ts",
+    "./NodeLogWriter": "./src/NodeLogWriter.ts",
+    "./NodeLogWriter.test": "./src/NodeLogWriter.test.ts",
+    "./timestamp": "./src/timestamp.ts"
+  },
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "main-types-note": "This is to appease tsc, types will be removed by clean-package. see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build#workaround ",
+  "module": "./dist/index.js",
+  "name": "@alienfast/logger-node",
   "peerDependencies": {
     "@alienfast/logger": "*"
   },
   "publishConfig": {
+    "exports": {
+      ".": "./dist/index.js",
+      "./*": "./*",
+      "./initializeNodeLogger": "./dist/initializeNodeLogger.js",
+      "./NodeLogWriter": "./dist/NodeLogWriter.js",
+      "./NodeLogWriter.test": "./dist/NodeLogWriter.test.js",
+      "./timestamp": "./dist/timestamp.js"
+    },
     "registry": "https://npm.pkg.github.com/"
   },
-  "repository": "https://github.com/alienfast/logger"
+  "repository": "https://github.com/alienfast/logger",
+  "scripts": {
+    "build": "tsdown",
+    "postpack": "clean-package restore -c ../../.clean-package.json",
+    "prepack": "clean-package -c ../../.clean-package.json",
+    "test": "vitest"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "12.1.0"
 }

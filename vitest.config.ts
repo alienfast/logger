@@ -1,8 +1,8 @@
 import { mergeConfig } from 'vite'
-import { UserConfig } from 'vitest'
+import type { UserConfig } from 'vitest'
 import { defineConfig } from 'vitest/config'
 
-import viteConfig from './vite.config'
+import viteConfig from './vite.config.ts'
 
 // const customAliasResolver = (
 //   this: PluginContext,
