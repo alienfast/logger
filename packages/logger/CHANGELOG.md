@@ -1,3 +1,19 @@
+# v12.1.1 (Wed Oct 01 2025)
+
+#### 🐛 Bug Fix
+
+- Migrate tooling: ESLint/Prettier → Biome, Vite → tsdown [#21](https://github.com/alienfast/logger/pull/21) ([@rosskevin](https://github.com/rosskevin))
+
+#### ⚠️ Pushed to `main`
+
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.1.0 (Mon Sep 15 2025)
 
 #### 🚀 Enhancement
