@@ -2,6 +2,12 @@
   "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
   "extends": ["@alienfast/biome-config/base"],
   "files": {
+    "experimentalScannerIgnores": [
+      "node_modules/**",
+      "**/dist/**",
+      "**/node_modules/**",
+      "packages/*/dist/**"
+    ],
     "includes": ["**/*"]
   },
   "linter": {

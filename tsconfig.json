@@ -2,6 +2,8 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "paths": {
       "@alienfast/logger": ["packages/logger/src/index.ts"],
@@ -10,6 +12,7 @@
     }
   },
   "display": "Type checking only - no build artifacts",
+  "exclude": ["node_modules", "packages/*/dist", "packages/*/node_modules"],
   "extends": "@alienfast/tsconfig/nodenext.json",
   "include": [
     "packages/*/src/**/*",

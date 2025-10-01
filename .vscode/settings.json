@@ -1,9 +1,9 @@
 {
-  "eslint.useFlatConfig": true,
   "search.exclude": {
     "**/.pnp.*": true,
     "**/.yarn": true
   },
-  "testing.automaticallyOpenPeekView": "never",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vitest.maximumConfigs": 15
 }
