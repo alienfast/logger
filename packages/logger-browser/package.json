@@ -7,10 +7,10 @@
   },
   "exports": {
     ".": "./src/index.ts",
-    "./*": "./*",
     "./BrowserLogWriter": "./src/BrowserLogWriter.ts",
     "./BrowserLogWriter.test": "./src/BrowserLogWriter.test.ts",
-    "./initializeBrowserLogger": "./src/initializeBrowserLogger.ts"
+    "./initializeBrowserLogger": "./src/initializeBrowserLogger.ts",
+    "./*": "./*"
   },
   "license": "UNLICENSED",
   "main": "./dist/index.js",
@@ -23,10 +23,10 @@
   "publishConfig": {
     "exports": {
       ".": "./dist/index.js",
-      "./*": "./*",
       "./BrowserLogWriter": "./dist/BrowserLogWriter.js",
       "./BrowserLogWriter.test": "./dist/BrowserLogWriter.test.js",
-      "./initializeBrowserLogger": "./dist/initializeBrowserLogger.js"
+      "./initializeBrowserLogger": "./dist/initializeBrowserLogger.js",
+      "./*": "./*"
     },
     "registry": "https://npm.pkg.github.com/"
   },

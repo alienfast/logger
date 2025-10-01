@@ -10,11 +10,11 @@
   },
   "exports": {
     ".": "./src/index.ts",
-    "./*": "./*",
     "./initializeNodeLogger": "./src/initializeNodeLogger.ts",
     "./NodeLogWriter": "./src/NodeLogWriter.ts",
     "./NodeLogWriter.test": "./src/NodeLogWriter.test.ts",
-    "./timestamp": "./src/timestamp.ts"
+    "./timestamp": "./src/timestamp.ts",
+    "./*": "./*"
   },
   "license": "UNLICENSED",
   "main": "./dist/index.js",
@@ -27,11 +27,11 @@
   "publishConfig": {
     "exports": {
       ".": "./dist/index.js",
-      "./*": "./*",
       "./initializeNodeLogger": "./dist/initializeNodeLogger.js",
       "./NodeLogWriter": "./dist/NodeLogWriter.js",
       "./NodeLogWriter.test": "./dist/NodeLogWriter.test.js",
-      "./timestamp": "./dist/timestamp.js"
+      "./timestamp": "./dist/timestamp.js",
+      "./*": "./*"
     },
     "registry": "https://npm.pkg.github.com/"
   },

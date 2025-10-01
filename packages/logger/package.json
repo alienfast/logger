@@ -9,7 +9,6 @@
   },
   "exports": {
     ".": "./src/index.ts",
-    "./*": "./*",
     "./Browser": "./src/Browser.ts",
     "./Browser.test": "./src/Browser.test.ts",
     "./configureLoggers": "./src/configureLoggers.ts",
@@ -23,7 +22,8 @@
     "./LogWriter": "./src/LogWriter.ts",
     "./objects": "./src/objects.ts",
     "./toLevel": "./src/toLevel.ts",
-    "./withLog": "./src/withLog.ts"
+    "./withLog": "./src/withLog.ts",
+    "./*": "./*"
   },
   "license": "UNLICENSED",
   "main": "./dist/index.js",
@@ -33,7 +33,6 @@
   "publishConfig": {
     "exports": {
       ".": "./dist/index.js",
-      "./*": "./*",
       "./Browser": "./dist/Browser.js",
       "./Browser.test": "./dist/Browser.test.js",
       "./configureLoggers": "./dist/configureLoggers.js",
@@ -47,7 +46,8 @@
       "./LogWriter": "./dist/LogWriter.js",
       "./objects": "./dist/objects.js",
       "./toLevel": "./dist/toLevel.js",
-      "./withLog": "./dist/withLog.js"
+      "./withLog": "./dist/withLog.js",
+      "./*": "./*"
     },
     "registry": "https://npm.pkg.github.com/"
   },
