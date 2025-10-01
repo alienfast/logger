@@ -1,8 +1,8 @@
-/* eslint-disable no-console */
+import { dumpConfiguration as dumpConfig } from './diagnostics.js'
 import { Level } from './Level.js'
 import { Log } from './Log.js'
 import { objectName } from './objects.js'
-import { LevelOrBoolean, toLevel } from './toLevel.js'
+import { type LevelOrBoolean, toLevel } from './toLevel.js'
 
 export interface LoggerConfig {
   /**
@@ -57,7 +57,7 @@ export class Logger {
    * @returns {Log}
    */
   public static get(object: string | object, threshold?: LevelOrBoolean, overwrite = false): Log {
-    const level: Level = toLevel(threshold)
+    const _level: Level = toLevel(threshold)
 
     if (!object) {
       throw new Error('An object (instance|class|string) must be specified.')
@@ -69,8 +69,8 @@ export class Logger {
       // need to delay resolution of LogWriter, so pass this in.
       log = new Log({
         name,
-        systemThreshold: this.getSystemThreshold(),
-        threshold: toLevel(threshold, this.getDefaultThreshold()),
+        systemThreshold: Logger.getSystemThreshold(),
+        threshold: toLevel(threshold, Logger.getDefaultThreshold()),
       })
       globalThis.logs[name] = log
       // console.log(`Log [${name}] set to ${threshold || this.defaultThreshold}`)
@@ -87,19 +87,6 @@ export class Logger {
   }
 
   public static dumpConfiguration() {
-    // window.logWriter = null
-    console.info('Loggers configured:')
-    console.info('\tglobalThis.logWriter', globalThis.logWriter)
-    // console.info('\tFORCE_LOG_WRITER', process && process.env && process.env.FORCE_LOG_WRITER)
-    console.info('\tlocation', import.meta.url)
-    console.info('\tsystemThreshold', this.getSystemThreshold())
-    console.info('\tdefaultThreshold', this.getDefaultThreshold())
-    console.info('\tDEBUG is', Level.DEBUG)
-    console.info('\tINFO is', Level.INFO)
-    console.info('\tConfigured logs:')
-    const sortedKeys = Object.keys(globalThis.logs).sort()
-    for (const key of sortedKeys) {
-      console.info(`\t\t${key}: ${Logger.get(key).options.threshold}`)
-    }
+    dumpConfig()
   }
 }

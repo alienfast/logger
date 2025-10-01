@@ -1,1 +1,1 @@
-export const isNode = typeof process !== 'undefined' && process.versions && !!process.versions.node
+export const isNode = process?.versions && !!process.versions.node

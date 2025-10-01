@@ -2,8 +2,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable no-console */
-import { Level, LogWriter } from '@alienfast/logger'
-import chalk, { ChalkInstance } from 'chalk'
+import { Level, type LogWriter } from '@alienfast/logger'
+import chalk, { type ChalkInstance } from 'chalk'
 
 import { timestamp } from './timestamp.js'
 
@@ -37,7 +37,7 @@ export class NodeLogWriter implements LogWriter {
     return [
       `${chalk.grey(timestamp('HH:mm:ss'))}`,
 
-      `${levelColor(levelName)} ${chalk.inverse(levelColor(' ' + name + ' '))}`,
+      `${levelColor(levelName)} ${chalk.inverse(levelColor(` ${name} `))}`,
       ...args,
     ]
   }

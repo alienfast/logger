@@ -8,10 +8,6 @@ export function objectName(object: object | string): string {
     return object as string
   } else {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    return (
-      (object as any).displayName ||
-      (object as any).name ||
-      (object.constructor && object.constructor.name)
-    )
+    return (object as any).displayName || (object as any).name || object.constructor?.name
   }
 }

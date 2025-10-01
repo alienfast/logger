@@ -1,8 +1,5 @@
-/* eslint-disable no-console */
 import { isNode } from './isNode.js'
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 const defaultUserAgent = isNode ? 'Node' : navigator.userAgent
 
 // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser

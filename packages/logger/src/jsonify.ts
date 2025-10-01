@@ -59,7 +59,7 @@ function simplifyDom(d?: SimplifiedDom) {
  */
 export function jsonify(o: object): string {
   const seen = new Set<object>()
-  return JSON.stringify(o, (k, v) => {
+  return JSON.stringify(o, (_k, v) => {
     if (!v) {
       return v
     }

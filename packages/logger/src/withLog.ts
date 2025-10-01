@@ -1,4 +1,4 @@
-import { Level } from './Level.js'
+import type { Level } from './Level.js'
 import { Log } from './Log.js'
 
 type WithLog = (log: Log) => void

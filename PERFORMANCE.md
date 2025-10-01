@@ -21,12 +21,14 @@ LogWriter implementations check log levels before expensive operations like time
 ## Performance Characteristics
 
 **When log levels are set to WARN/ERROR:**
+
 - Debug/info calls have near-zero overhead (< 0.001ms per call)
 - Spread operator overhead eliminated for disabled log levels
 - Object serialization optimized with efficient cycle detection
 - Timestamp and formatting operations skipped when not needed
 
 **Backward Compatibility:**
+
 - All existing APIs work unchanged
 - No migration required
 - Performance improvements are automatic

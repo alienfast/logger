@@ -1,6 +1,7 @@
 export * from './Browser.js'
 export * from './configureLoggers.js'
 export * from './debugs.js'
+export * from './diagnostics.js'
 export * from './isNode.js'
 export * from './jsonify.js'
 export * from './Level.js'

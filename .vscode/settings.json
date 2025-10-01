@@ -1,9 +1,9 @@
 {
-  "search.exclude": {
-    "**/.yarn": true,
-    "**/.pnp.*": true
-  },
   "eslint.useFlatConfig": true,
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "testing.automaticallyOpenPeekView": "never"
+  "search.exclude": {
+    "**/.pnp.*": true,
+    "**/.yarn": true
+  },
+  "testing.automaticallyOpenPeekView": "never",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

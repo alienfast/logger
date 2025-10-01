@@ -1,12 +1,21 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@alienfast/tsconfig/nodenext.json", // for scripts and configs
-  "display": "...",
-  "files": [],
-  "compilerOptions": { "composite": true },
-  "references": [
-    { "path": "packages/logger" },
-    { "path": "packages/logger-browser" },
-    { "path": "packages/logger-node" }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "paths": {
+      "@alienfast/logger": ["packages/logger/src/index.ts"],
+      "@alienfast/logger-browser": ["packages/logger-browser/src/index.ts"],
+      "@alienfast/logger-node": ["packages/logger-node/src/index.ts"]
+    }
+  },
+  "display": "Type checking only - no build artifacts",
+  "extends": "@alienfast/tsconfig/nodenext.json",
+  "include": [
+    "packages/*/src/**/*",
+    "packages/*/tests/**/*",
+    "scripts/**/*",
+    "typings/**/*",
+    "typings-local/**/*"
   ]
 }

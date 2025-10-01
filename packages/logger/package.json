@@ -1,34 +1,63 @@
 {
-  "name": "@alienfast/logger",
-  "version": "12.1.0",
-  "type": "module",
-  "main-types-note": "This is to appease tsc, types will be removed by clean-package. see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build#workaround ",
-  "main": "./dist/index.js",
-  "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
-  "sideEffects": false,
-  "license": "UNLICENSED",
-  "scripts": {
-    "test": "vitest",
-    "build": "vite build -c ../../vite.config.lib.ts",
-    "prepack": "clean-package -c ../../.clean-package.json",
-    "postpack": "clean-package restore -c ../../.clean-package.json"
-  },
   "dependencies": {
     "@types/node": "^24.4.0"
   },
   "devDependencies": {
     "clean-package": "^2.2.0",
-    "vite": "^7.1.5",
+    "tsdown": "^0.15.6",
     "vitest": "^3.2.4"
   },
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./*",
+    "./Browser": "./src/Browser.ts",
+    "./Browser.test": "./src/Browser.test.ts",
+    "./configureLoggers": "./src/configureLoggers.ts",
+    "./debugs": "./src/debugs.ts",
+    "./isNode": "./src/isNode.ts",
+    "./jsonify": "./src/jsonify.ts",
+    "./Level": "./src/Level.ts",
+    "./Log": "./src/Log.ts",
+    "./Logger": "./src/Logger.ts",
+    "./LogWriter": "./src/LogWriter.ts",
+    "./objects": "./src/objects.ts",
+    "./toLevel": "./src/toLevel.ts",
+    "./withLog": "./src/withLog.ts"
+  },
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "main-types-note": "This is to appease tsc, types will be removed by clean-package. see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build#workaround ",
+  "module": "./dist/index.js",
+  "name": "@alienfast/logger",
   "publishConfig": {
+    "exports": {
+      ".": "./dist/index.js",
+      "./*": "./*",
+      "./Browser": "./dist/Browser.js",
+      "./Browser.test": "./dist/Browser.test.js",
+      "./configureLoggers": "./dist/configureLoggers.js",
+      "./debugs": "./dist/debugs.js",
+      "./isNode": "./dist/isNode.js",
+      "./jsonify": "./dist/jsonify.js",
+      "./Level": "./dist/Level.js",
+      "./Log": "./dist/Log.js",
+      "./Logger": "./dist/Logger.js",
+      "./LogWriter": "./dist/LogWriter.js",
+      "./objects": "./dist/objects.js",
+      "./toLevel": "./dist/toLevel.js",
+      "./withLog": "./dist/withLog.js"
+    },
     "registry": "https://npm.pkg.github.com/"
   },
-  "repository": "https://github.com/alienfast/logger"
+  "repository": "https://github.com/alienfast/logger",
+  "scripts": {
+    "build": "tsdown",
+    "postpack": "clean-package restore -c ../../.clean-package.json",
+    "prepack": "clean-package -c ../../.clean-package.json",
+    "test": "vitest"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "12.1.0"
 }
