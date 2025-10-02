@@ -1,3 +1,15 @@
+# v12.1.2 (Thu Oct 02 2025)
+
+#### ⚠️ Pushed to `main`
+
+- revert biome-changed check for isNode ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.1.1 (Wed Oct 01 2025)
 
 #### 🐛 Bug Fix
