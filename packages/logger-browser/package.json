@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@alienfast/logger": "^12.1.2",
+    "@alienfast/logger": "^12.1.3",
     "clean-package": "^2.2.0",
     "tsdown": "^0.15.6",
     "vitest": "^3.2.4"
@@ -40,5 +40,5 @@
   "sideEffects": false,
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "12.1.2"
+  "version": "12.1.3"
 }
