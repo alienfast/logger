@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@types/node": "^24.4.0"
+    "@types/node": "^24.6.2"
   },
   "devDependencies": {
     "clean-package": "^2.2.0",
