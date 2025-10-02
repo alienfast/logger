@@ -1,3 +1,17 @@
+# v12.1.3 (Thu Oct 02 2025)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger`
+  - ncu ([@rosskevin](https://github.com/rosskevin))
+  - handle process carefully for browser compatibility ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.1.2 (Thu Oct 02 2025)
 
 #### ⚠️ Pushed to `main`
