@@ -1,3 +1,17 @@
+# v12.1.4 (Thu Nov 27 2025)
+
+#### ⚠️ Pushed to `main`
+
+- Apply yarn.lock changes ([@rosskevin](https://github.com/rosskevin))
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - fix side effects ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.1.3 (Thu Oct 02 2025)
 
 #### ⚠️ Pushed to `main`
