@@ -86,7 +86,7 @@
     "test-each": "lerna exec --stream --parallel -- yarn test"
   },
   "type": "module",
-  "version": "11.0.6",
+  "version": "11.0.7",
   "workspaces": [
     "packages/*"
   ]
