@@ -3,7 +3,7 @@
     "chalk": "^5.6.2"
   },
   "devDependencies": {
-    "@alienfast/logger": "^12.1.4",
+    "@alienfast/logger": "^12.1.5",
     "clean-package": "^2.2.0",
     "tsdown": "^0.16.8",
     "vitest": "^4.0.14"
@@ -47,5 +47,5 @@
   ],
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "12.1.4"
+  "version": "12.1.5"
 }
