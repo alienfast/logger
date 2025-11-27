@@ -58,7 +58,10 @@
     "prepack": "clean-package -c ../../.clean-package.json",
     "test": "vitest"
   },
-  "sideEffects": false,
+  "sideEffects": [
+    "./src/Logger.ts",
+    "./src/Browser.ts"
+  ],
   "type": "module",
   "types": "./dist/index.d.ts",
   "version": "12.1.3"

@@ -37,7 +37,9 @@
     "prepack": "clean-package -c ../../.clean-package.json",
     "test": "vitest"
   },
-  "sideEffects": false,
+  "sideEffects": [
+    "./src/initializeBrowserLogger.ts"
+  ],
   "type": "module",
   "types": "./dist/index.d.ts",
   "version": "12.1.3"
