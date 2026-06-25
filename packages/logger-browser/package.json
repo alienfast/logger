@@ -6,10 +6,10 @@
     "vitest": "^4.0.14"
   },
   "exports": {
-    ".": "./src/index.ts",
-    "./BrowserLogWriter": "./src/BrowserLogWriter.ts",
-    "./BrowserLogWriter.test": "./src/BrowserLogWriter.test.ts",
-    "./initializeBrowserLogger": "./src/initializeBrowserLogger.ts",
+    ".": "./dist/index.js",
+    "./BrowserLogWriter": "./dist/BrowserLogWriter.js",
+    "./BrowserLogWriter.test": "./dist/BrowserLogWriter.test.js",
+    "./initializeBrowserLogger": "./dist/initializeBrowserLogger.js",
     "./*": "./*"
   },
   "license": "UNLICENSED",

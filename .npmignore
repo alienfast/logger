@@ -2,6 +2,6 @@
 .yarn
 src
 tsconfig.*
-tsup.*
+tsdown.config.*
 node_modules
 package.json.backup

@@ -9,11 +9,11 @@
     "vitest": "^4.0.14"
   },
   "exports": {
-    ".": "./src/index.ts",
-    "./initializeNodeLogger": "./src/initializeNodeLogger.ts",
-    "./NodeLogWriter": "./src/NodeLogWriter.ts",
-    "./NodeLogWriter.test": "./src/NodeLogWriter.test.ts",
-    "./timestamp": "./src/timestamp.ts",
+    ".": "./dist/index.js",
+    "./initializeNodeLogger": "./dist/initializeNodeLogger.js",
+    "./NodeLogWriter": "./dist/NodeLogWriter.js",
+    "./NodeLogWriter.test": "./dist/NodeLogWriter.test.js",
+    "./timestamp": "./dist/timestamp.js",
     "./*": "./*"
   },
   "license": "UNLICENSED",

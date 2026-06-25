@@ -14,7 +14,7 @@ export const baseConfig: UserConfig = {
   entry: ['./src/*/index.ts', './src/*/index.tsx', './src/*.ts', './src/*.tsx'],
   exports: {
     all: true,
-    devExports: true,
+    devExports: false,
   },
   external: (id) => {
     if (id.includes('node_modules')) return true
