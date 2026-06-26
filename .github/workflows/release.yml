@@ -10,6 +10,7 @@ permissions:
   issues: write
   pull-requests: write
   packages: write
+  id-token: write # npm trusted publishing (OIDC) to npmjs.org
 
 jobs:
   release:
@@ -41,8 +42,12 @@ jobs:
 
       - run: yarn release
 
+      # OIDC trusted publishing requires npm >= 11.5.1; setup-node's bundled npm may lag behind
+      - run: npm install --global npm@latest
+
       # cannot run this on branches because it doesn't keep the canary version from auto shipit, can only secondarily publish to npm for main branch
       - name: Publish secondarily to npm
+        # Auth for npmjs.org is OIDC trusted publishing (id-token above), not NPM_TOKEN; npm auto-generates provenance.
         # waiting on bug/related pr/auto release https://github.com/intuit/auto/issues/2488
         # run: lerna exec --stream --parallel -- npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
         run: >
