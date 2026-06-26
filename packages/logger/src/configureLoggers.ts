@@ -1,6 +1,6 @@
-import type { Level } from './Level.js'
-import { Logger } from './Logger.js'
-import { type LevelString, toLevel } from './toLevel.js'
+import type { Level } from './Level.ts'
+import { Logger } from './Logger.ts'
+import { type LevelString, toLevel } from './toLevel.ts'
 
 export interface LoggersConfig {
   [key: string | symbol]: LevelString | Level

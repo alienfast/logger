@@ -1,4 +1,4 @@
-import { Log, LogWriter, LoggerConfig } from '@alienfast/logger'
+import type { Log, LoggerConfig, LogWriter } from '@alienfast/logger'
 
 declare global {
   // NOTE: global variables declared with let and const don’t show up on globalThis.

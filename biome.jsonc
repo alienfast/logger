@@ -1,20 +1,34 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.5.0/schema.json",
   "extends": ["@alienfast/biome-config/base"],
   "files": {
-    "experimentalScannerIgnores": [
-      "node_modules/**",
-      "**/dist/**",
-      "**/node_modules/**",
-      "packages/*/dist/**"
-    ],
-    "includes": ["**/*"]
+    // Standalone .svg are assets, not source — don't lint their embedded <style> as CSS. dist/coverage are build output.
+    "includes": ["**", "!**/dist", "!coverage", "!**/*.svg", "!tmp*"]
   },
   "linter": {
     "rules": {
       "complexity": {
+        // Log/Logger expose intentional static-only utility classes; converting them to free functions would fight that design.
         "noStaticOnlyClass": "off"
+      },
+      // The house consumes .ts import extensions (allowImportingTsExtensions); tsc still catches genuinely broken imports.
+      "correctness": { "noUnresolvedImports": "off" }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["typings/**"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            // From the repo root, tsconfig `paths` resolves @alienfast/logger to its .ts source, so useImportExtensions would
+            // append `.ts` to the bare package specifier — which noUndeclaredDependencies then misreads as an undeclared package.
+            // Inside the packages the same import resolves to the package boundary and stays clean; only root typings hit this.
+            "useImportExtensions": "off"
+          }
+        }
       }
     }
-  }
+  ],
+  "vcs": { "clientKind": "git", "enabled": true, "useIgnoreFile": true }
 }

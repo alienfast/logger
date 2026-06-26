@@ -2,9 +2,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable no-console */
 
-import { dumpConfiguration } from './diagnostics.js'
-import { jsonify } from './jsonify.js'
-import { Level } from './Level.js'
+import { dumpConfiguration } from './diagnostics.ts'
+import { jsonify } from './jsonify.ts'
+import { Level } from './Level.ts'
 
 export interface Options {
   name: string
@@ -12,7 +12,6 @@ export interface Options {
   systemThreshold: Level
 }
 
-// biome-ignore lint/complexity/useOptionalChain: need careful node/browser handling
 const NOLOG = typeof process !== 'undefined' && process.env.NOLOG
 
 // class SelfBuildLogWriter implements LogWriter {

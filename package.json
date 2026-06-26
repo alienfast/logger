@@ -5,7 +5,12 @@
       "target": "comment"
     },
     "plugins": [
-      "npm",
+      [
+        "npm",
+        {
+          "setRcToken": false
+        }
+      ],
       "all-contributors",
       "first-time-contributor",
       "released"
@@ -31,10 +36,8 @@
     "@vitejs/plugin-react": "^5.1.1",
     "auto": "^11.3.6",
     "execa": "^9.6.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
     "madge": "^8.0.0",
-    "markdownlint-cli": "^0.46.0",
+    "markdownlint-cli2": "^0.22.1",
     "npm-run-all": "^4.1.5",
     "rimraf": "^6.1.2",
     "tsdown": "^0.16.8",
@@ -45,24 +48,9 @@
     "vitest": "^4.0.14"
   },
   "engines": {
-    "node": ">=20"
+    "node": "^20.19.0 || >=22.12.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,json}": [
-      "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true",
-      "git add"
-    ],
-    "*.md": [
-      "markdownlint --fix",
-      "git add"
-    ]
-  },
-  "packageManager": "yarn@4.9.4",
+  "packageManager": "pnpm@11.9.0",
   "private": true,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -70,24 +58,20 @@
   "repository": "https://github.com/alienfast/logger",
   "scripts": {
     "build": "run-s clean build-prep build-each",
-    "build-each": "lerna exec --stream -- yarn build",
+    "build-each": "lerna exec --stream -- pnpm build",
     "build-prep": "lerna exec --stream -- cp ../../.npmignore . && lerna exec --stream -- cp ../../LICENSE .",
-    "check": "run-s check-types check-biome check-circular check-markdown",
+    "check": "run-p -c --aggregate-output check-types check-biome check-circular check-markdown test",
     "check-biome": "biome check --write",
-    "check-circular": "madge --circular --extensions ts,tsx ./packages/*/src --ts-config ./tsconfig.json",
-    "check-markdown": "markdownlint '**/*.md' --fix",
-    "check-types": "echo 'tsc -p tsconfig.json --pretty' && tsc -p tsconfig.json --pretty",
+    "check-circular": "madge --circular --extensions ts ./packages/*/src --ts-config ./tsconfig.json",
+    "check-markdown": "markdownlint-cli2 --fix \"**/*.md\"",
+    "check-types": "tsc -p tsconfig.json",
     "clean": "tsx ./scripts/clean.ts",
-    "clean-yarn": "tsx ./scripts/clean-yarn.ts",
-    "lint-fix": "yarn check-biome && yarn check-markdown",
-    "release": "yarn auto shipit",
+    "clean-deps": "tsx ./scripts/clean-deps.ts",
+    "lint-fix": "run-s check-biome check-markdown",
+    "release": "auto shipit",
     "reset": "tsx ./scripts/reset.ts",
-    "test": "run-s check-types test-each",
-    "test-each": "lerna exec --stream --parallel -- yarn test"
+    "test": "vitest run"
   },
   "type": "module",
-  "version": "11.0.7",
-  "workspaces": [
-    "packages/*"
-  ]
+  "version": "11.0.7"
 }

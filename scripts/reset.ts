@@ -11,7 +11,7 @@ console.log('Resetting...')
 
 const dir = dirname(fileURLToPath(import.meta.url))
 
-await Promise.all([$$`tsx ${dir}/clean.ts`, $$`tsx ${dir}/clean-yarn.ts`])
+await Promise.all([$$`tsx ${dir}/clean.ts`, $$`tsx ${dir}/clean-deps.ts`])
 
 console.log('Installing...')
-await $$`yarn install`
+await $$`pnpm install`

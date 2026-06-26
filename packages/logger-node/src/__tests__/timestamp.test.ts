@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { timestamp } from '../timestamp.js'
+import { timestamp } from '../timestamp.ts'
 
 describe('timestamp', () => {
   // const date = new Date('2025-01-02T03:04:05.006Z')

@@ -18,29 +18,32 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     env:
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: pnpm/action-setup@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 'latest'
-          cache: 'yarn'
+          # Pin 24.18.0+: Node 24.17.0 carries an http.Agent regression that makes node-fetch@2 (auto's pinned
+          # octokit) throw false ERR_STREAM_PREMATURE_CLOSE on keep-alive socket reuse — nodejs/node#63989, fixed in 24.18.0.
+          node-version: 24.18.0
+          cache: 'pnpm'
 
       # allow the lock file to change (updating our own workspace versions in monorepo)
-      - run: yarn install --no-immutable
-      - run: yarn test
-      - run: yarn build
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm test
+      - run: pnpm build
 
       # commit back the lock file change if it works
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Apply yarn.lock changes
+          commit_message: Apply pnpm-lock.yaml changes
 
-      - run: yarn release
+      - run: pnpm release
 
       # OIDC trusted publishing requires npm >= 11.5.1; setup-node's bundled npm may lag behind
       - run: npm install --global npm@latest

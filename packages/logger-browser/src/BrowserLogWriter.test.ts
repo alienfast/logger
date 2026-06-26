@@ -1,7 +1,7 @@
 import { Logger } from '@alienfast/logger'
 import { describe, expect, test } from 'vitest'
 
-import { initializeBrowserLogger } from './initializeBrowserLogger.js'
+import { initializeBrowserLogger } from './initializeBrowserLogger.ts'
 
 describe('BrowserLogWriter', () => {
   test.concurrent('initializeBrowserLogger', () => {

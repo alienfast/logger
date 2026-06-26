@@ -1,8 +1,8 @@
-import { dumpConfiguration as dumpConfig } from './diagnostics.js'
-import { Level } from './Level.js'
-import { Log } from './Log.js'
-import { objectName } from './objects.js'
-import { type LevelOrBoolean, toLevel } from './toLevel.js'
+import { dumpConfiguration as dumpConfig } from './diagnostics.ts'
+import { Level } from './Level.ts'
+import { Log } from './Log.ts'
+import { objectName } from './objects.ts'
+import { type LevelOrBoolean, toLevel } from './toLevel.ts'
 
 export interface LoggerConfig {
   /**

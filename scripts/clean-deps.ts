@@ -4,16 +4,14 @@ import { rimraf as r } from 'rimraf'
 // TODO: promote this as a script to @alienfast/ci once it is stable
 
 export default {}
-console.log('Cleaning yarn...')
+console.log('Cleaning dependencies...')
 
-await $`yarn tsc -b --clean`
+await $`pnpm exec tsc -b --clean`
 
-// packages/*/dist cloud/*/dist .eslintcache ./packages/*/*.log *.log
 await Promise.all([
   r('./{packages,cloud}/*/node_modules', { glob: true }),
-  r('yarn.lock'),
+  r('pnpm-lock.yaml'),
   r('node_modules'),
-  r('.yarn/install-state.gz'),
 ]).then(async () => {
-  await $`yarn cache clean`
+  await $`pnpm store prune`
 })

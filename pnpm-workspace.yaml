@@ -1,0 +1,26 @@
+# pnpm workspace + settings. pnpm 11 reads its config from this file (not the package.json `pnpm` field).
+packages:
+  - 'packages/*'
+
+# Resolve the @alienfast/logger* siblings from the workspace and keep the `workspace:` protocol on save.
+linkWorkspacePackages: true
+saveWorkspaceProtocol: true
+
+# Supply-chain cooldown: never install a dependency version published within the last 7 days (10080 min) —
+# a compromised release is usually detected and yanked within hours to days. Keep .ncurc.cjs `cooldown` aligned.
+minimumReleaseAge: 10080
+# First-party @alienfast/* packages are published by us (and resolve from public npm) — exempt them.
+minimumReleaseAgeExclude:
+  - '@alienfast/*'
+
+# pnpm 11 blocks dependency build scripts (postinstall, etc.) by default; only packages mapped to `true` here
+# may run them. Seeded with the known native builder; add others pnpm reports during install via `pnpm approve-builds`.
+allowBuilds:
+  esbuild: true
+
+# Hoist the @tsconfig/* presets to the root node_modules. The @alienfast/tsconfig presets `extends`
+# "@tsconfig/create-react-app/tsconfig.json" by bare specifier; tsdown's tsconfig loader resolves that from the
+# root rather than pnpm's nested layout, so without hoisting the package build can't find the preset (tsc, which
+# resolves relative to the preset file, is unaffected). Mirrors yarn's previously-hoisted node_modules.
+publicHoistPattern:
+  - '@tsconfig/*'

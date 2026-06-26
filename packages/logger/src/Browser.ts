@@ -1,4 +1,4 @@
-import { isNode } from './isNode.js'
+import { isNode } from './isNode.ts'
 
 const defaultUserAgent = isNode ? 'Node' : navigator.userAgent
 

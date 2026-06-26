@@ -5,7 +5,7 @@
 import { Level, type LogWriter } from '@alienfast/logger'
 import chalk, { type ChalkInstance } from 'chalk'
 
-import { timestamp } from './timestamp.js'
+import { timestamp } from './timestamp.ts'
 
 // chalk.enabled = true
 

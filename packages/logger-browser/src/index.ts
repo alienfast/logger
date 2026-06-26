@@ -1,2 +1,2 @@
-export * from './BrowserLogWriter.js'
-export * from './initializeBrowserLogger.js'
+export * from './BrowserLogWriter.ts'
+export * from './initializeBrowserLogger.ts'

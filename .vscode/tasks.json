@@ -1,12 +1,10 @@
 {
   "tasks": [
     {
-      "detail": "echo 'tsc -p tsconfig.json --pretty' && tsc -p tsconfig.json --pretty",
       "group": {
         "isDefault": true,
         "kind": "build"
       },
-      "label": "npm: check-types",
       "problemMatcher": ["$tsc"],
       "script": "check-types",
       "type": "npm"

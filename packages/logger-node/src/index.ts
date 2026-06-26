@@ -1,2 +1,2 @@
-export * from './initializeNodeLogger.js'
-export * from './NodeLogWriter.js'
+export * from './initializeNodeLogger.ts'
+export * from './NodeLogWriter.ts'

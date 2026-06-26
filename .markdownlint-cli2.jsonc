@@ -1,0 +1,10 @@
+{
+  // markdownlint-cli2 config: a single source of truth read identically by the CLI (check-markdown script, lint-staged) and the VS Code markdownlint
+  // extension. The in-editor extension does NOT read .markdownlintignore (only the cli2 `ignores` below) — that gap is why tmp/ scratch files leaked
+  // MD041 warnings into the agent's context. No `globs` key on purpose: callers pass their own targets, so explicit-file runs stay scoped.
+  "config": {
+    "default": true,
+    "MD013": false
+  },
+  "ignores": ["**/node_modules/**", "**/CHANGELOG.md", "tmp/**"]
+}

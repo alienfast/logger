@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 
-import { Level } from './Level.js'
+import { Level } from './Level.ts'
 
 /**
  * Dumps the current logger configuration to console.
