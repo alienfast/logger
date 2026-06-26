@@ -1,3 +1,15 @@
+# v12.1.8 (Fri Jun 26 2026)
+
+#### 🐛 Bug Fix
+
+- ci: publish to npmjs.org via OIDC trusted publishing [#22](https://github.com/alienfast/logger/pull/22) ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.1.7 (Fri Jun 26 2026)
 
 #### ⚠️ Pushed to `main`
