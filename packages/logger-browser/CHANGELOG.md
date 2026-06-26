@@ -1,3 +1,15 @@
+# v12.1.7 (Fri Jun 26 2026)
+
+#### ⚠️ Pushed to `main`
+
+- fix: point published exports at dist instead of src ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.1.6 (Thu Nov 27 2025)
 
 #### ⚠️ Pushed to `main`
