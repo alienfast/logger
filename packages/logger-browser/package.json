@@ -7,10 +7,10 @@
   },
   "exports": {
     ".": "./dist/index.js",
-    "./*": "./*",
     "./BrowserLogWriter": "./dist/BrowserLogWriter.js",
     "./BrowserLogWriter.test": "./dist/BrowserLogWriter.test.js",
-    "./initializeBrowserLogger": "./dist/initializeBrowserLogger.js"
+    "./initializeBrowserLogger": "./dist/initializeBrowserLogger.js",
+    "./*": "./*"
   },
   "license": "MIT",
   "main": "./dist/index.js",
