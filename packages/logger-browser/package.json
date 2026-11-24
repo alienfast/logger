@@ -12,7 +12,7 @@
     "./BrowserLogWriter.test": "./dist/BrowserLogWriter.test.js",
     "./initializeBrowserLogger": "./dist/initializeBrowserLogger.js"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "./dist/index.js",
   "main-types-note": "This is to appease tsc, types will be removed by clean-package. see https://github.com/rosskevin/ts-esm-workspaces/tree/bug-main-required-to-build#workaround ",
   "module": "./dist/index.js",
