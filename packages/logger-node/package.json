@@ -10,11 +10,11 @@
   },
   "exports": {
     ".": "./dist/index.js",
+    "./*": "./*",
     "./initializeNodeLogger": "./dist/initializeNodeLogger.js",
     "./NodeLogWriter": "./dist/NodeLogWriter.js",
     "./NodeLogWriter.test": "./dist/NodeLogWriter.test.js",
-    "./timestamp": "./dist/timestamp.js",
-    "./*": "./*"
+    "./timestamp": "./dist/timestamp.js"
   },
   "license": "MIT",
   "main": "./dist/index.js",
@@ -25,6 +25,7 @@
     "@alienfast/logger": "*"
   },
   "publishConfig": {
+    "access": "public",
     "exports": {
       ".": "./dist/index.js",
       "./*": "./*",
@@ -32,8 +33,7 @@
       "./NodeLogWriter": "./dist/NodeLogWriter.js",
       "./NodeLogWriter.test": "./dist/NodeLogWriter.test.js",
       "./timestamp": "./dist/timestamp.js"
-    },
-    "registry": "https://npm.pkg.github.com/"
+    }
   },
   "repository": "https://github.com/alienfast/logger",
   "scripts": {

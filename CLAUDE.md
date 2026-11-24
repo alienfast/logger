@@ -83,7 +83,8 @@ All packages support these commands (run from package directory or with `lerna e
 
 - **Auto** for automated releases with conventional commits
 - **Lerna** for coordinated package versioning
-- **GitHub Packages** registry for publishing
+- **npmjs.org** is the only registry: auto's `lerna publish` authenticates by OIDC trusted publishing, and auto's GitHub
+  calls use the job's built-in `GITHUB_TOKEN`, so the release workflow needs no stored secrets
 - Pre-commit hooks with lint-staged running Biome checks
 
 ## Development Workflow

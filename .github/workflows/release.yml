@@ -5,24 +5,23 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Keyless: auto uses the job's built-in GITHUB_TOKEN, and npmjs.org auth is OIDC trusted publishing — no stored secrets.
 permissions:
   contents: write
   issues: write
   pull-requests: write
-  packages: write
-  id-token: write # npm trusted publishing (OIDC) to npmjs.org
+  id-token: write # auto publishes via `lerna publish`; lerna >= 10 exchanges this for a short-lived npm token
 
 jobs:
   release:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     env:
-      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: pnpm/action-setup@v4
 
@@ -44,17 +43,3 @@ jobs:
           commit_message: Apply pnpm-lock.yaml changes
 
       - run: pnpm release
-
-      # OIDC trusted publishing requires npm >= 11.5.1; setup-node's bundled npm may lag behind
-      - run: npm install --global npm@latest
-
-      # cannot run this on branches because it doesn't keep the canary version from auto shipit, can only secondarily publish to npm for main branch
-      - name: Publish secondarily to npm
-        # Auth for npmjs.org is OIDC trusted publishing (id-token above), not NPM_TOKEN; npm auto-generates provenance.
-        # waiting on bug/related pr/auto release https://github.com/intuit/auto/issues/2488
-        # run: lerna exec --stream --parallel -- npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
-        run: >
-          cd packages/logger && npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
-          && cd ../logger-browser && npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
-          && cd ../logger-node && npm publish --access=public --ignore-scripts --@alienfast:registry='https://registry.npmjs.org'
-        if: github.ref == 'refs/heads/main'

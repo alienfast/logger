@@ -17,6 +17,7 @@ minimumReleaseAgeExclude:
 # may run them. Seeded with the known native builder; add others pnpm reports during install via `pnpm approve-builds`.
 allowBuilds:
   esbuild: true
+  nx: false # lerna's dependency; its postinstall is try/catch-wrapped, so nx works without it
 
 # Hoist the @tsconfig/* presets to the root node_modules. The @alienfast/tsconfig presets `extends`
 # "@tsconfig/create-react-app/tsconfig.json" by bare specifier; tsdown's tsconfig loader resolves that from the
