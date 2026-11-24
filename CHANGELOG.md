@@ -1,3 +1,17 @@
+# v12.1.9 (Tue Nov 24 2026)
+
+#### ⚠️ Pushed to `main`
+
+- `@alienfast/logger-browser`, `@alienfast/logger-node`, `@alienfast/logger`
+  - Apply pnpm-lock.yaml changes ([@rosskevin](https://github.com/rosskevin))
+  - ci: publish to npmjs only via OIDC, drop GitHub Packages and stored tokens ([@rosskevin](https://github.com/rosskevin))
+
+#### Authors: 1
+
+- Kevin Ross ([@rosskevin](https://github.com/rosskevin))
+
+---
+
 # v12.1.8 (Fri Jun 26 2026)
 
 #### 🐛 Bug Fix
